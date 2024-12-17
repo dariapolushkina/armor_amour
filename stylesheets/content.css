@@ -1,0 +1,235 @@
+*{ box-sizing: border-box;}
+body{
+    width: 100%;
+    height: 500vw;
+    background-color: rgb(0, 0, 0);
+    /* background-image: url(/img/popopo.png); */
+    background-size: contain;
+    /* background: rgb(45, 45, 45); */
+    cursor: url("") , auto;
+}
+
+
+@font-face {
+font-family: "DINAlternateBold";
+src: url(/fonts/DINAlternateBold.ttf) format("truetype");
+font-style: normal;
+font-weight: normal;
+}
+
+p{ 
+  font-family: 'DINAlternateBold'; 
+  font-size: 2vw; 
+  color: white;
+}
+
+.first_block {
+  width: 100vw;
+  height: 122vh;
+  /* background-color: rgb(29, 29, 29); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.rings {
+  scale: 170%;
+  margin-left: -22vw;
+  position: absolute;
+  width: 70vw;
+  height: 70vw;
+}
+
+.ring-r {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  animation: rotate-r 9s linear infinite, pulse 3s ease-in-out infinite;
+}
+
+
+@keyframes rotate-r {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .ring-l {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    animation: rotate-l 10s linear infinite, pulse 3s ease-in-out infinite;
+  }
+  
+  
+  @keyframes rotate-l {
+      from {
+        transform: rotate(360deg);
+      }
+    
+      to {
+        transform: rotate(0deg);
+      }
+    }
+
+
+@keyframes pulse {
+    0%,100%{
+        scale: 100%;
+    }
+    50%{
+        scale: 105%;
+    }
+}
+
+.knight-01{
+  margin-top: 55vh;
+  margin-left: -22vw;
+  width: 40vw;
+  height: 130vh;
+  position: absolute;
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  
+}
+.knight-01-steps{
+  
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: block;
+  animation: knight-01_step 0.8s steps(1) infinite;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@keyframes knight-01_step {
+  0% {
+    background-image: url(/img/knight_1/ьесь_copy-1.png);
+  }
+  16.66% {
+    background-image: url(/img/knight_1/ьесь_copy-2.png);
+  }
+  33.33% {
+    background-image: url(/img/knight_1/ьесь_copy-3.png);
+  }
+  50% {
+    background-image: url(/img/knight_1/ьесь_copy-4.png);
+  }
+  66.66% {
+    background-image: url(/img/knight_1/knight-05.png);
+  }
+  83.33% {
+    background-image: url(/img/knight_1/knight-06.png);
+  }
+  100% {
+    background-image: url(/img/knight_1/ьесь_copy-1.png);
+  }
+}
+
+.text-01 {
+  position: absolute; 
+  top: 8vh; 
+  width: 100vw;
+  height: 2vh;
+  padding: 0 4vw; 
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  z-index: 9999; 
+}
+
+
+.right_first_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 20vw;
+  margin-top: 20vh;
+  margin-right: 4vw;
+}
+
+.white-star{
+  width: 100%;
+  height: 35%;
+  object-fit: contain;
+}
+
+.pink-strokes{
+  text-align: center;
+  display: inline-block;
+  height: 65%;
+  width: 100%;
+}
+
+.st {
+  background: #15a287;
+  width: 100%;
+}
+
+
+
+
+.test {
+  margin-top: 200vh;
+  position: absolute;
+  z-index: 9999;
+}
+
+.preloader-1 {
+  width: 120vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.preloader-1 .line {
+  width: 490px;
+  height: 200px;
+  background: #fff;
+  margin: 0 1px;
+  display: inline-block;
+  animation: opacity-1 8s ease-in infinite ;
+}
+
+.preloader-1 .line-1 { animation-delay: 100ms; }
+.preloader-1 .line-2{ animation-delay: 200ms; }
+.preloader-1 .line-3{ animation-delay: 300ms; }
+.preloader-1 .line-4{ animation-delay: 400ms; }
+.preloader-1 .line-5{ animation-delay: 500ms; }
+
+@keyframes opacity-1 { 
+  0% { 
+    opacity: 1;
+  }
+  50% { 
+    opacity: 0;
+  }
+  100% { 
+    opacity: 1;
+  }  
+}
+
