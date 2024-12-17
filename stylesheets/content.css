@@ -13,8 +13,8 @@ body{
 @font-face {
 font-family: "DINAlternateBold";
 src: url("../fonts/DINAlternateBold.ttf") format("truetype");
-font-style: normal;
-font-weight: normal;
+font-style: bold;
+font-weight: bold;
 }
 
 p{ 
