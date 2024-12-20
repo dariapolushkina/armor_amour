@@ -20,6 +20,19 @@ src: url("../fonts/DINAlternateBold.ttf") format("truetype");
 font-style: bold;
 font-weight: bold;
 }
+@font-face {
+  font-family: "BenzGacore-Regular";
+  src: url("../fonts/BenzGacore-Regular.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  }
+
+@font-face {
+  font-family: "snellroundhand_bold";
+  src: url("../fonts/snellroundhand_bold.otf") format("truetype");
+  font-style: bold;
+  font-weight: bold;
+  }
 
 p{ 
   font-family: 'DINAlternateBold'; 
@@ -234,4 +247,152 @@ p{
     opacity: 1;
   }  
 }
+
+
+.animation-container {
+  
+  margin-top: 138vh;
+  position: absolute;
+  z-index: 9999;
+}
+.lines {
+  display: flex;
+  flex-direction: column; /* Расположение линий сверху вниз */
+  gap: 5px; /* Расстояние между линиями */
+}
+
+.line {
+  width: 200px; /* Начальная ширина линии */
+  height: 5px; /* Толщина линии */
+  background: linear-gradient(90deg, #aaa, #fff, #aaa);
+  animation: gradient-shift 2s ease-in-out infinite;
+  animation-delay: calc(var(--i) * 0.2s); /* Плавная задержка для эффекта перелива */
+  transform-origin: center; /* Масштабирование по центру */
+}
+
+/* Задаем толщину и порядок линий */
+.line:nth-child(1) { --i: 0; height: 2px; }
+.line:nth-child(2) { --i: 1; height: 3px; }
+.line:nth-child(3) { --i: 2; height: 4px; }
+.line:nth-child(4) { --i: 3; height: 5px; }
+.line:nth-child(5) { --i: 4; height: 6px; }
+.line:nth-child(6) { --i: 5; height: 7px; }
+.line:nth-child(7) { --i: 6; height: 8px; }
+.line:nth-child(8) { --i: 7; height: 7px; }
+.line:nth-child(9) { --i: 8; height: 6px; }
+.line:nth-child(10) { --i: 9; height: 5px; }
+.line:nth-child(11) { --i: 10; height: 4px; }
+.line:nth-child(12) { --i: 11; height: 3px; }
+.line:nth-child(13) { --i: 12; height: 2px; }
+
+/* Анимация градиента и ширины */
+@keyframes gradient-shift {
+  0%, 100% {
+    transform: scaleY(1); /* Исходное состояние */
+    background: linear-gradient(90deg, #aaa, #fff, #aaa);
+  }
+  50% {
+    transform: scaleY(1.5); /* Линия расширяется в ширину */
+    background: linear-gradient(90deg, #666, #ddd, #666);
+  }
+}
+
+
+
+
+
+
+
+@font-face {
+  font-family: "BenzGacore-Regular";
+  src: url("path/to/BenzGacore-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SnellRoundhand-Bold";
+  src: url("path/to/SnellRoundhand-Bold.ttf") format("truetype");
+}
+
+
+
+.second-block {
+  border: white 1px solid;
+  position: relative;
+  height: 100vh;
+  width: 92vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.armor {
+  position: absolute;
+  top: 0%;
+  z-index: 2;
+  width: 92vw;
+  transform: scaleY(0.8);
+  transform-origin: top;
+  animation: scale-armor 5s infinite;
+}
+@keyframes scale-armor {
+  0% {
+    transform: scaleY(1); /* Начальное положение */
+  }
+  20% {
+    transform: scaleY(0.5); /* Прямоугольник выезжает — армор сжимается */
+  }
+  40% {
+    transform: scaleY(0.5); /* Прямоугольник и армор остаются на месте */
+  }
+  60% {
+    transform: scaleY(0.5); /* Прямоугольник и армор остаются на месте */
+  }
+  80% {
+    transform: scaleY(1); /* Прямоугольник уезжает — армор восстанавливается */
+  }
+  100% {
+    transform: scaleY(1); /* Армор возвращается в исходное положение */
+  }
+}
+
+.black-rectangle {
+  background-color: rgb(0, 0, 0);
+  opacity: 100%;
+  left: -92vw;
+  width: 92vw;
+  height: 20vh;
+  position: absolute;
+  top: 19vh;
+  z-index: 3;
+  animation: move-rectangle 5s infinite;
+}
+
+@keyframes move-rectangle {
+  0% {
+    left: -92vw; /* Начинаем за пределами экрана слева */
+  }
+  20% {
+    left: 0; /* Резкое выезжание */
+  }
+  40% {
+    left: 0; /* Задержка на месте после выезда */
+  }
+  60% {
+    left: 0; /* Задержка на месте, прямоугольник остаётся */
+  }
+  80% {
+    left: -92vw; /* Резкое уезжание обратно */
+  }
+  100% {
+    left: -92vw; /* Прямоугольник снова за пределами экрана */
+  }
+}
+
+.amour {
+  position: absolute;
+  top: 15vh;
+  z-index: 4;
+  width: 92vw;
+}
+
 
