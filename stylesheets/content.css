@@ -340,6 +340,8 @@ p{
 
 }
 @keyframes scale-armor {
+
+  /* ПОДОГНАТЬ */
   0% {
     transform: scaleY(1); 
   }
@@ -347,13 +349,13 @@ p{
     transform: scaleY(1); 
   }
   50% {
-    transform: scaleY(0.65); 
+    transform: scaleY(0.45); 
   }
   60% {
-    transform: scaleY(0.65); 
+    transform: scaleY(0.45); 
   }
   80% {
-    transform: scaleY(1); 
+    transform: scaleY(0.45); 
   }
   100% {
     transform: scaleY(1); 
@@ -364,36 +366,34 @@ p{
 
 .black-rectangle {
   background-color: rgb(0, 0, 0);
-  opacity: 100%;
+  opacity: 0%;
   left: -92vw;
   width: 100vw;
-  height: 25vh;
+  height: 28vh;
   position: absolute;
-  top: 19vh;
-  z-index: 3;
+  top: 17vh;
+  z-index: 3; 
+  /* ИНДЕКС ЧТОБЫ НЕ ПЕРЕКРЫВАЛ РЫЦАРЯ ПОКАДРОВОГО СНИЗУ */
   animation: move-rectangle 5s infinite;
 }
 
-@keyframes move-rectangle {
+/* @keyframes move-rectangle {
   0% {
-    left: -120vw; /* Начинаем за пределами экрана слева */
+    left: -120vw; 
   }
-  40% {
-    left: -1; /* Резкое выезжание */
+  20% {
+    left: -120vw; 
   }
-  40% {
-    left: 0; /* Задержка на месте после выезда */
+  70% {
+    left: 0; 
   }
-  60% {
-    left: 0; /* Задержка на месте, прямоугольник остаётся */
-  }
-  80% {
-    left: -120vw; /* Резкое уезжание обратно */
+  70% {
+     
   }
   100% {
-    left: -120vw; /* Прямоугольник снова за пределами экрана */
+    left: -120vw; 
   }
-}
+} */
 
 .amour {
   position: absolute;
