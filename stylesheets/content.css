@@ -5,7 +5,7 @@ body{
     width: 100%;
     height: 500vw;
     background-color: rgb(0, 0, 0);
-    background-image: url(/img/popopo.png);
+    background-image: url(/img/ref.png);
     background-size: contain;
     /* background: rgb(45, 45, 45); */
     cursor: url("") , auto;
@@ -67,7 +67,7 @@ p{
   width: 100%;
   height: 100%;
   transform-origin: center;
-  animation: rotate-r 9s linear infinite, pulse 3s ease-in-out infinite;
+  animation: rotate-r 15s linear infinite, pulse 10s ease-in-out infinite;
 }
 
 
@@ -88,7 +88,7 @@ p{
     width: 100%;
     height: 100%;
     transform-origin: center;
-    animation: rotate-l 10s linear infinite, pulse 3s ease-in-out infinite;
+    animation: rotate-l 15s linear infinite, pulse 10s ease-in-out infinite;
   }
   
   
@@ -170,6 +170,18 @@ p{
   z-index: 9999;
 }
 
+.text-02 {
+  position: absolute; 
+  top: 128vh; 
+  width: 100vw;
+  height: 2vh;
+  padding: 0 4vw; 
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  z-index: 9999;
+}
+
 
 .right_first_block {
   background-color: rgb(0, 0, 0);
@@ -187,13 +199,31 @@ p{
   justify-content: center;
   width: 100%;
   height: 40%;
+  animation: spin 1s infinite ease-in-out ;
+}
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); /* Начинаем с текущего положения */
+  }
+  35% {
+    transform: rotate(-10deg); /* Начинаем с текущего положения */
+  }
+  100% {
+    transform: rotate(360deg); /* Каждый цикл прибавляет видимые 10 градусов */
+  }
 }
 
 .pink-strokes{
   text-align: center;
+  justify-content: end;
   display: inline-block;
-  height: 65%;
+  height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column; /* Расположение линий сверху вниз */
+  gap:2.8vh; /* Расстояние между линиями */
 }
 
 .st {
@@ -210,96 +240,50 @@ p{
   z-index: 9999;
 }
 
-.preloader-1 {
-  width: 120vw;
-  height: 30vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-
-
-.preloader-1 .line {
-  width: 490px;
-  height: 200px;
-  background: #fff;
-  margin: 0 1px;
-  display: inline-block;
-  animation: opacity-1 8s ease-in infinite ;
-}
-
-.preloader-1 .line-1 { animation-delay: 100ms; }
-.preloader-1 .line-2{ animation-delay: 200ms; }
-.preloader-1 .line-3{ animation-delay: 300ms; }
-.preloader-1 .line-4{ animation-delay: 400ms; }
-.preloader-1 .line-5{ animation-delay: 500ms; }
-
-@keyframes opacity-1 { 
-  0% { 
-    opacity: 1;
-  }
-  50% { 
-    opacity: 0;
-  }
-  100% { 
-    opacity: 1;
-  }  
-}
 
 
 .animation-container {
   
-  margin-top: 138vh;
+  margin-top: 136vh;
   position: absolute;
   z-index: 9999;
 }
-.lines {
-  display: flex;
-  flex-direction: column; /* Расположение линий сверху вниз */
-  gap: 5px; /* Расстояние между линиями */
-}
 
 .line {
-  width: 200px; /* Начальная ширина линии */
-  height: 5px; /* Толщина линии */
-  background: linear-gradient(90deg, #aaa, #fff, #aaa);
-  animation: gradient-shift 2s ease-in-out infinite;
-  animation-delay: calc(var(--i) * 0.2s); /* Плавная задержка для эффекта перелива */
+  width: 100%; /* Начальная ширина линии */
+  height: 5vh; /* Толщина линии */
+  background-color: #FF70AB;
+  animation: gradient-shift 1s ease-in-out infinite;
+  animation-delay: calc(var(--i) * 0.05s); /* Плавная задержка для эффекта перелива */
+animation-direction: initial;
+/* animation-direction: unset;  */
   transform-origin: center; /* Масштабирование по центру */
 }
 
 /* Задаем толщину и порядок линий */
-.line:nth-child(1) { --i: 0; height: 2px; }
-.line:nth-child(2) { --i: 1; height: 3px; }
-.line:nth-child(3) { --i: 2; height: 4px; }
-.line:nth-child(4) { --i: 3; height: 5px; }
-.line:nth-child(5) { --i: 4; height: 6px; }
-.line:nth-child(6) { --i: 5; height: 7px; }
-.line:nth-child(7) { --i: 6; height: 8px; }
-.line:nth-child(8) { --i: 7; height: 7px; }
-.line:nth-child(9) { --i: 8; height: 6px; }
-.line:nth-child(10) { --i: 9; height: 5px; }
-.line:nth-child(11) { --i: 10; height: 4px; }
-.line:nth-child(12) { --i: 11; height: 3px; }
-.line:nth-child(13) { --i: 12; height: 2px; }
+.line:nth-child(1) { --i: 0; height: 1vh; }
+.line:nth-child(2) { --i: 1; height: 1.1vh; }
+.line:nth-child(3) { --i: 2; height: 1.2vh; }
+.line:nth-child(4) { --i: 3; height: 1.3vh; }
+.line:nth-child(5) { --i: 4; height: 1.4vh; }
+.line:nth-child(6) { --i: 5; height: 1.5vh; }
+.line:nth-child(7) { --i: 6; height: 1.6vh; }
+.line:nth-child(8) { --i: 7; height: 1.7vh; }
+.line:nth-child(9) { --i: 8; height: 1.8vh; }
+.line:nth-child(10) { --i: 9; height: 1.9vh; }
+.line:nth-child(11) { --i: 10; height: 2vh; }
+.line:nth-child(12) { --i: 11; height: 2.1vh; }
+.line:nth-child(13) { --i: 12; height: 2.2vh; }
 
 /* Анимация градиента и ширины */
 @keyframes gradient-shift {
   0%, 100% {
-    transform: scaleY(1); /* Исходное состояние */
-    background: linear-gradient(90deg, #aaa, #fff, #aaa);
+    transform: scaleY(-1.5); /* Исходное состояние */
   }
   50% {
-    transform: scaleY(1.5); /* Линия расширяется в ширину */
-    background: linear-gradient(90deg, #666, #ddd, #666);
+    transform: scaleY(0); /* Линия расширяется в ширину */
   }
 }
-
-
-
-
 
 
 
@@ -318,12 +302,21 @@ p{
 .second-block {
   /* border: white 1px solid; */
   position: relative;
-  height: 100vh;
+  height: 98vh;
   width: 92vw;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.background-svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1;
 }
 .armor {
   position: absolute;
@@ -335,7 +328,7 @@ p{
   /* animation: scale-armor 5s infinite cubic-bezier(0.19, 1, 0.22, 1); */
   /* animation: scale-armor 5s infinite cubic-bezier(0.215, 0.610, 0.9, 1); */
 
-  animation: scale-armor 5s infinite cubic-bezier(0.215, 0.610, 0.355, 1);
+  animation: scale-armor 5s infinite cubic-bezier(0.215, 0.610, 0.355, 1), recolor-armor 2s infinite;
 
 
 }
@@ -348,17 +341,23 @@ p{
   25% {
     transform: scaleY(1); 
   }
-  50% {
+  35% {
     transform: scaleY(0.45); 
   }
   60% {
     transform: scaleY(0.45); 
   }
-  80% {
+  90% {
     transform: scaleY(0.45); 
   }
   100% {
     transform: scaleY(1); 
+  }
+}
+
+@keyframes recolor-armor{
+  0% {
+    
   }
 }
 
@@ -397,7 +396,7 @@ p{
 
 .amour {
   position: absolute;
-  top: 15vh;
+  top: 14vh;
   z-index: 4;
   width: 92vw;
   left: -92vw; /* Начальная позиция для AMOUR, вне экрана */
@@ -426,4 +425,81 @@ p{
   100% {
     left: -122vw; /* Амур уезжает обратно за пределы экрана */
   }
+}
+
+
+
+
+
+
+.bottom_test {
+  margin-top: 350vh;
+  position: absolute;
+}
+
+.bottom_hiding_rect{
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 2;
+}
+
+.bottom_rings {
+  z-index: -1;
+  scale: 170%;
+  margin-right: -32vw;
+  position: absolute;
+  top: 0%;
+  width: 70vw;
+  height: 70vw;
+}
+
+.b-ring-r {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  animation: rotate-r 15s linear infinite, pulse 10s ease-in-out infinite;
+}
+
+
+@keyframes rotate-r {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .b-ring-l {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    animation: rotate-l 15s linear infinite, pulse 10s ease-in-out infinite;
+  }
+  
+  
+  @keyframes rotate-l {
+      from {
+        transform: rotate(360deg);
+      }
+    
+      to {
+        transform: rotate(0deg);
+      }
+    }
+
+
+@keyframes pulse {
+    0%,100%{
+        scale: 100%;
+    }
+    50%{
+        scale: 105%;
+    }
 }
