@@ -13,6 +13,14 @@ body{
     justify-content: center;
 }
 
+.container {
+  width: 100vw; /* Ширина экрана */
+  display: flex;
+  align-items: center;  flex-direction: column; /* Блоки идут один под другим */
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Чтобы не было лишних полос прокрутки */
+}
 
 @font-face {
 font-family: "DINAlternateBold";
@@ -49,6 +57,7 @@ p{
   align-items: center;
   position: relative;
   overflow: hidden;
+  margin-bottom: 5vh;
 }
 
 .rings {
@@ -307,6 +316,7 @@ animation-direction: initial;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 5vh;
 }
 
 .background-svg {
