@@ -399,30 +399,7 @@ p{
 
 
 .amour_svg path {
-  animation: fill-amour 5s infinite cubic-bezier(0.215, 0.610, 0.355, 1);
-}
-@keyframes fill-amour {
-  0% {
-    fill: white; /* Белая заливка */
-  }
-  25% {
-    fill: white; /* Белая заливка */
-  }
-  25.01% {
-    fill: #FF70AB; /* Розовая заливка начинает мигать */
-  }
-  60% {
-    fill: #FF70AB; /* Розовая заливка */
-  }
-  60.01% {
-    fill: #FF70AB; /* Розовая заливка продолжает мигать */
-  }
-  90% {
-    fill: #FF70AB; /* Розовая заливка */
-  }
-  90.01% {
-    fill: white; /* Возврат к белой заливке */
-  }
+  animation: fill-armor 5s infinite cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
 .amour_svg {
