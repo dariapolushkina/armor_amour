@@ -197,8 +197,8 @@ p{
   position: absolute;
   display: flex;
   justify-content: center;
-  width: 100%;
-  height: 40%;
+  width: 20vw;
+  height: 40vh;
   animation: spin 1s infinite ease-in-out ;
 }
 
@@ -219,8 +219,8 @@ p{
   text-align: center;
   justify-content: end;
   display: inline-block;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column; /* Расположение линий сверху вниз */
   gap:2.8vh; /* Расстояние между линиями */
