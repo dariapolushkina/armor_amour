@@ -261,7 +261,7 @@ p{
 }
 
 .animation-container {
-  margin-top: 137vh;
+  margin-top: 138vh;
   position: absolute;
   z-index: 9999;
 }
@@ -319,12 +319,22 @@ p{
   width: 92vw;
   transform: scaleY(0.8);
   transform-origin: top;
-  animation: scale-armor 5s infinite cubic-bezier(0.215, 0.610, 0.355, 1), recolor-armor 2s infinite;
+  animation: scale-armor 5s infinite cubic-bezier(0.215, 0.610, 0.355, 1), fill-armor 5s infinite cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
-@keyframes scale-armor {
 
-  /* ПОДОГНАТЬ */
+.armor_svg path {
+  animation: fill-armor 5s infinite cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.armor_svg {
+  width: 100%;
+  height: auto;
+  fill:#ffffff;
+} 
+
+
+@keyframes scale-armor {
   0% {
     transform: scaleY(1); 
   }
@@ -344,6 +354,7 @@ p{
     transform: scaleY(1); 
   }
 }
+
 
 .black-rectangle {
   background-color: rgb(0, 0, 0);
@@ -386,6 +397,39 @@ p{
   animation: move-amour 5s infinite ease-in-out; 
 }
 
+
+.amour_svg path {
+  animation: fill-amour 5s infinite cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+@keyframes fill-amour {
+  0% {
+    fill: white; /* Белая заливка */
+  }
+  25% {
+    fill: white; /* Белая заливка */
+  }
+  25.01% {
+    fill: #FF70AB; /* Розовая заливка начинает мигать */
+  }
+  60% {
+    fill: #FF70AB; /* Розовая заливка */
+  }
+  60.01% {
+    fill: #FF70AB; /* Розовая заливка продолжает мигать */
+  }
+  90% {
+    fill: #FF70AB; /* Розовая заливка */
+  }
+  90.01% {
+    fill: white; /* Возврат к белой заливке */
+  }
+}
+
+.amour_svg {
+  width: 100%;
+  height: auto;
+  fill:#ffffff;
+} 
 
 
 @keyframes move-amour {
