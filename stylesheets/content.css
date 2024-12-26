@@ -18,6 +18,10 @@ body{
   display: flex;
   align-items: center;  
   flex-direction: column; 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
 }
 
 @font-face {
@@ -220,7 +224,7 @@ p{
   justify-content: center;
   left: 1vw;
   width: 20vw;
-  height: 40vh;
+  height: 20vw;
   animation: rotate_star 1s infinite ease-in-out ;
   animation-delay: 0.1s;
 }
@@ -239,15 +243,15 @@ p{
 }
 
 .pink-strokes{
-  margin-top: 35vh;
+  margin-top: 25vh;
   background-color: rgb(0, 0, 0);
   justify-content: end;
   align-items: flex-end;
   display: inline-block;
-  height: 65vh;
+  height: 75vh;
   display: flex;
   flex-direction: column; 
-  gap:2.8vh; 
+  gap:3vh; 
 }
 
 .line {
@@ -528,10 +532,10 @@ p{
   width: 93vw;
 }
 .kakovo{
-  top: 51vh;
-  left: 31vw;
+  top: 42vh;
+  left: 27vw;
   position: absolute;
-  width: 50vw;
+  width: 66vw;
 }
 
 @keyframes sprite-animation {
@@ -628,12 +632,12 @@ p{
 }
 
 .background_knight {
-  top: 43vh;
-  position: absolute;
+  top: 23vh;
+  position: relative;
   width: 92vw; 
   height: 57vh; 
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   animation: sprite-animation 5s infinite; 
-  background-color: white;
 }
 
