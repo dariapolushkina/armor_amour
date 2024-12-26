@@ -295,6 +295,24 @@ p{
   fill:#ffffff;
 } 
 
+.split {
+  position: absolute;
+  top: 180vh;
+  width: 92vw; 
+  height: 30vw;
+  background: url('/img/itog.png') no-repeat;
+  background-size: 3772vw 100%; 
+  animation: play 4s steps(41) infinite;
+}
+
+@keyframes play {
+  0% {
+    background-position: 0 0; 
+  }
+  100% {
+    background-position: -3772vw 0; 
+  }
+}
 /* .bottom_test {
   margin-top: 350vh;
   position: absolute;
