@@ -179,6 +179,9 @@ p{
   align-items: center; 
   z-index: 9999;
 }
+.text-01 p:hover {
+  animation: blink_text 0.6s step-start infinite; 
+}
 
 .text-02 {
   color: white;
@@ -192,6 +195,9 @@ p{
   align-items: center; 
   z-index: 9999;
 }
+.text-02 p:hover {
+  animation: blink_text 0.3s step-start infinite; 
+}
 
 .text-03 {
   color: white;
@@ -204,6 +210,19 @@ p{
   justify-content: space-between; 
   align-items: center; 
   z-index: 9999;
+}
+
+.text-03 p:hover {
+  animation: blink_text 0.1s step-start infinite; 
+}
+
+@keyframes blink_text {
+  0%, 100% {
+    color: #FF70AB; 
+  }
+  50% {
+    color: white; 
+  }
 }
 
 
@@ -264,11 +283,7 @@ p{
   transform-origin: center; 
 }
 
-.animation-container {
-  margin-top: 138vh;
-  position: absolute;
-  z-index: 9999;
-}
+
 
 .line:nth-child(1) { --i: 0; height: 1vh; }
 .line:nth-child(2) { --i: 1; height: 1.1vh; }
@@ -294,7 +309,11 @@ p{
   }
 }
 
-
+.animation-container {
+  margin-top: 138vh;
+  position: absolute;
+  z-index: 9999;
+}
 @font-face {
   font-family: "BenzGacore-Regular";
   src: url("path/to/BenzGacore-Regular.ttf") format("truetype");
@@ -323,12 +342,12 @@ p{
   width: 92vw;
   transform: scaleY(0.8);
   transform-origin: top;
-  animation: scale-armor 5s infinite cubic-bezier(0.215, 0.610, 0.355, 1), fill-armor 5s infinite cubic-bezier(0.215, 0.610, 0.355, 1);
+  animation: scale-armor 4s infinite cubic-bezier(0.215, 0.610, 0.355, 1), fill-armor 5s infinite cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
 
 .armor_svg path {
-  animation: fill-armor 5s infinite cubic-bezier(0.215, 0.610, 0.355, 1);
+  animation: fill-armor 4s infinite cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
 .armor_svg {
@@ -369,7 +388,7 @@ p{
   position: absolute;
   top: 17vh;
   z-index: 3; 
-  animation: move-rectangle 5s infinite;
+  animation: move-rectangle 4s infinite;
 }
 
 /* @keyframes move-rectangle {
@@ -398,12 +417,12 @@ p{
   z-index: 4; 
   width: 92vw; 
   left: -92vw;  
-  animation: move-amour 5s infinite ease-in-out; 
+  animation: move-amour 4s infinite ease-in-out; 
 }
 
 
 .amour_svg path {
-  animation: fill-armor 5s infinite cubic-bezier(0.215, 0.610, 0.355, 1);
+  animation: fill-armor 4s infinite cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
 .amour_svg {
@@ -420,7 +439,10 @@ p{
   10% {
     left: -122vw;
   }
-  30% {
+  15% {
+    left: -122vw;
+  }
+  24% {
     left: 0; 
   }
   60% {
@@ -638,6 +660,6 @@ p{
   height: 57vh; 
   background-size: contain;
   background-repeat: no-repeat;
-  animation: sprite-animation 5s infinite; 
+  animation: sprite-animation 4s infinite; 
 }
 
