@@ -5,7 +5,7 @@ body{
     width: 100%;
     height: 500vw;
     background-color: rgb(0, 0, 0);
-    /* background-image: url(/img/reffin.png); */
+    background-image: url(/img/reffin.png);
     background-size: contain;
     cursor: url("") , auto;
     display: flex;
@@ -367,21 +367,32 @@ p{
   animation: play 4s steps(41) infinite; */
 
 }
+.third-block {
+  position: absolute;
+  top: 272vh;
+  height: 98vh;
+  left: 0vw;
+  width: 92vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
+}
 .stars {
   z-index: 2;
-  position: absolute;
-  top: 235vh;
-  left: 10vw;
-  width: 115vw;
-  height: 115vw; 
-  overflow: hidden;
+  position: relative;
+  width: 120vh;
+  height: 120vh; 
+  top: 10vh;
+  left: 20vw;
 }
 
 .star {
   position: absolute;
   width: 100%;
   height: 100%;
+  scale: 200%;
   opacity: 0; 
   transform: scale(0); 
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
@@ -448,20 +459,19 @@ p{
 .bottom_test {
   position: absolute;
   left: 28vw;
-  top: 57vh;
 }
 
 .bottom_hiding_rect{
   position: relative;
   left: -28vw;
-  top: 80vh;
   width: 100vw;
-  height: 210vh;
+  height: 180vh;
   background-color: rgb(0, 0, 0);
   z-index: -2;
 }
 
 .bottom_rings {
+  top: -95vh;
   z-index: -3;
   scale: 240%;
   position: relative;
@@ -488,7 +498,7 @@ p{
   }
 
 .knight-back{
-  top: 253vh;
+  top: -20vh;
   left: 42vw;
   z-index: 999;
   position: absolute;
@@ -497,30 +507,30 @@ p{
 }
 
 .text-bottom{
-  top:302vh;
   position: absolute;
   z-index: 999;
   left: 1vw;
 }
 
 .feel{
+  top: 30vh;
   z-index: inherit;
-  position: absolute;
+  position: relative;
   left: 3vw;
   width: 93vw;
 }
 .kakovo{
-  top: 42vh;
+  top: 11vh;
   left: 27vw;
-  position: absolute;
+  position: relative;
   width: 67vw;
 }
 
 .eto{
+  top: 8vh;
   z-index: inherit;
-  top: 65vh;
   left: 5vw;
-  position: absolute;
+  position: relative;
   width: 91vw;
 }
 
