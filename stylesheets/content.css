@@ -7,7 +7,6 @@ body{
     background-color: rgb(0, 0, 0);
     /* background-image: url(/img/reffin.png); */
     background-size: contain;
-    /* background: rgb(45, 45, 45); */
     cursor: url("") , auto;
     display: flex;
     justify-content: center;
