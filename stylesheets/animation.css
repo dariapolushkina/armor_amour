@@ -90,22 +90,22 @@
 
 @keyframes scale-armor {
     0% {
-      transform: scaleY(1); 
-    }
-    15% {
-      transform: scaleY(1); 
-    }
-    25% {
       transform: scaleY(0.45); 
     }
-    60% {
+    10% {
+      transform: scaleY(1); 
+    }
+    35% {
+      transform: scaleY(1); 
+    }
+    47% {
       transform: scaleY(0.45); 
     }
     90% {
       transform: scaleY(0.45); 
     }
     100% {
-      transform: scaleY(1); 
+      transform: scaleY(0.45); 
     }
 }
 
@@ -135,10 +135,10 @@
     10% {
       left: -122vw;
     }
-    40% {
+    36% {
       left: -122vw;
     }
-    50% {
+    42% {
       left: 0; 
     }
     60% {
@@ -147,7 +147,7 @@
     80% {
       left: 0;
     }
-    100% {
+    98% {
       left: -122vw; 
     }
 }

@@ -10,7 +10,9 @@ body{
     cursor: url("") , auto;
     display: flex;
     justify-content: center;
+    cursor: url('/img/star.cursor.svg'), auto;
 }
+
 
 .container {
   width: 100vw;
@@ -61,8 +63,8 @@ p{
 }
 
 .rings {
-  scale: 170%;
-  margin-left: -22vw;
+  scale: 160%;
+  margin-left: -21vw;
   position: absolute;
   top: 0%;
   width: 70vw;
@@ -161,6 +163,18 @@ p{
   animation: blink_text 0.1s step-start infinite; 
 }
 
+.text-04 {
+  color: white;
+  position:absolute; 
+  top: 500vh; 
+  width: 100vw;
+  height: 2vh;
+  padding: 0 4vw; 
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  z-index: 9999;
+}
 
 .star_and_strokes_block {
   position: absolute;
@@ -295,45 +309,175 @@ p{
   fill:#ffffff;
 } 
 
+
 .split {
   position: absolute;
   top: 180vh;
   width: 92vw; 
   height: 30vw;
-  background: url('/img/itog.png') no-repeat;
-  background-size: 3772vw 100%; 
-  animation: play 4s steps(41) infinite;
+  animation: playFrames 4s steps(41) infinite; 
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-@keyframes play {
+@keyframes playFrames {
+  0% { background-image: url('/img/1.png'); }
+  2.44% { background-image: url('/img/2.png'); }
+  4.88% { background-image: url('/img/3.png'); }
+  7.32% { background-image: url('/img/4.png'); }
+  9.76% { background-image: url('/img/5.png'); }
+  12.2% { background-image: url('/img/6.png'); }
+  14.63% { background-image: url('/img/7.png'); }
+  17.07% { background-image: url('/img/8.png'); }
+  19.51% { background-image: url('/img/9.png'); }
+  21.95% { background-image: url('/img/10.png'); }
+  24.39% { background-image: url('/img/11.png'); }
+  26.83% { background-image: url('/img/12.png'); }
+  29.27% { background-image: url('/img/13.png'); }
+  31.71% { background-image: url('/img/14.png'); }
+  34.15% { background-image: url('/img/15.png'); }
+  36.59% { background-image: url('/img/16.png'); }
+  39.02% { background-image: url('/img/17.png'); }
+  41.46% { background-image: url('/img/18.png'); }
+  43.9% { background-image: url('/img/19.png'); }
+  46.34% { background-image: url('/img/20.png'); }
+  48.78% { background-image: url('/img/21.png'); }
+  51.22% { background-image: url('/img/22.png'); }
+  53.66% { background-image: url('/img/23.png'); }
+  56.1% { background-image: url('/img/24.png'); }
+  58.54% { background-image: url('/img/25.png'); }
+  60.98% { background-image: url('/img/26.png'); }
+  63.41% { background-image: url('/img/27.png'); }
+  65.85% { background-image: url('/img/28.png'); }
+  68.29% { background-image: url('/img/29.png'); }
+  70.73% { background-image: url('/img/30.png'); }
+  73.17% { background-image: url('/img/31.png'); }
+  75.61% { background-image: url('/img/32.png'); }
+  78.05% { background-image: url('/img/33.png'); }
+  80.49% { background-image: url('/img/34.png'); }
+  82.93% { background-image: url('/img/35.png'); }
+  85.37% { background-image: url('/img/36.png'); }
+  87.8% { background-image: url('/img/37.png'); }
+  90.24% { background-image: url('/img/38.png'); }
+  92.68% { background-image: url('/img/39.png'); }
+  95.12% { background-image: url('/img/40.png'); }
+  97.56% { background-image: url('/img/41.png'); }
+  100% { background-image: url('/img/1.png'); } 
+}
+
+
+.split {
+  /* position: absolute;
+  top: 180vh;
+  width: 92vw; 
+  height: 30vw;
+  background: url('/img/itog.png') no-repeat;
+  background-size: 3772vw 100%; 
+  animation: play 4s steps(41) infinite; */
+
+}
+
+.stars {
+  z-index: 2;
+  position: absolute;
+  top: 235vh;
+  left: 10vw;
+  width: 115vw;
+  height: 115vw; 
+  overflow: hidden;
+}
+
+.star {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0; 
+  transform: scale(0); 
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.star-1 {
+  opacity: 1; 
+  transform: scale(1); 
+}
+
+@keyframes grow {
+  0% {
+      opacity: 0;
+      transform: scale(0);
+  }
+  40% {
+      opacity: 1;
+      transform: scale(1);
+  }
+  60% {
+      opacity: 1;
+      transform: scale(1);
+  }
+  100% {
+      opacity: 0;
+      transform: scale(0);
+  }
+}
+
+.star-1 {
+  animation: grow 1s infinite;
+}
+
+.star-2 {
+  animation: grow 0.5s infinite; /* Задержка в 0.5 секунды */
+}
+
+.star-3 {
+  animation: grow 0.5s infinite 0.25s; 
+}
+
+.star-4 {
+  animation: grow 1s infinite 0.s; 
+}
+
+.star-5 {
+  animation: grow 1s infinite 0.8s; 
+}
+
+.star-6 {
+  animation: grow 1s infinite 1.2s; 
+}
+
+/* @keyframes play {
   0% {
     background-position: 0 0; 
   }
   100% {
     background-position: -3772vw 0; 
   }
-}
-/* .bottom_test {
+} */
+
+
+.bottom_test {
   margin-top: 350vh;
   position: absolute;
 }
 
 .bottom_hiding_rect{
+  position: relative;
+  top: -200vh;
   width: 100vw;
-  height: 100vh;
+  height: 210vh;
   background-color: black;
-  z-index: 2;
+  z-index: -2;
 }
 
 .bottom_rings {
-  z-index: -1;
-  scale: 170%;
-  margin-right: -32vw;
+  z-index: -3;
+  scale: 240%;
+  left: 28vw;
   position: absolute;
-  top: 0%;
+  top: -76vh;
   width: 70vw;
   height: 70vw;
 }
+
 
 .b-ring-r {
   position: absolute;
@@ -344,16 +488,6 @@ p{
 }
 
 
-@keyframes rotate-r {
-    from {
-      transform: rotate(0deg);
-    }
-  
-    to {
-      transform: rotate(360deg);
-    }
-  }
-
   .b-ring-l {
     position: absolute;
     top: 0;
@@ -363,28 +497,6 @@ p{
     transform-origin: center;
     animation: rotate-l 15s linear infinite, pulse 10s ease-in-out infinite;
   }
-  
-  
-  @keyframes rotate-l {
-      from {
-        transform: rotate(360deg);
-      }
-    
-      to {
-        transform: rotate(0deg);
-      }
-    }
-
-
-@keyframes pulse {
-    0%,100%{
-        scale: 100%;
-    }
-    50%{
-        scale: 105%;
-    }
-} */
-
 
 .knight-back{
   top: 253vh;
@@ -396,7 +508,7 @@ p{
 }
 
 .text-bottom{
-  top:308vh;
+  top:310vh;
   position: absolute;
   z-index: 999;
   left: 1vw;
@@ -412,7 +524,15 @@ p{
   top: 42vh;
   left: 27vw;
   position: absolute;
-  width: 66vw;
+  width: 67vw;
+}
+
+.eto{
+  z-index: inherit;
+  top: 66vh;
+  left: 5vw;
+  position: absolute;
+  width: 91vw;
 }
 
 /* @keyframes sprite-animation {
