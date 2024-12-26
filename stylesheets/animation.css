@@ -1,0 +1,153 @@
+/* КОЛЬЦА */
+@keyframes rotate-r {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+@keyframes rotate-l {
+    from {
+      transform: rotate(360deg);
+    }
+  
+    to {
+      transform: rotate(0deg);
+    }
+  }
+
+@keyframes pulse {
+  0%,100%{
+      scale: 100%;
+  }
+  50%{
+      scale: 105%;
+  }
+}
+
+@keyframes knight-01_step {
+    0% {
+      background-image: url("../img/knight_1/ьесь_copy-1.png");
+    }
+    5% {
+      background-image: url("../img/knight_1/ьесь_copy-2.png");
+    }
+    10% {
+      background-image: url("../img/knight_1/ьесь_copy-3.png");
+    }
+    15% {
+      background-image: url("../img/knight_1/ьесь_copy-4.png");
+    }
+    
+    25% {
+      background-image: url("../img/knight_1/ьесь_copy-1.png");
+    }
+    100% {
+      background-image: url("../img/knight_1/ьесь_copy-1.png");
+    }
+}
+
+
+@keyframes blink_text {
+    0%, 100% {
+      color: #FF70AB; 
+    }
+    50% {
+      color: white; 
+    }
+  }
+
+
+
+@keyframes rotate_star {
+    0% {
+      transform: rotate(0deg); 
+    }
+    95% {
+      transform: rotate(360deg); 
+    }
+    100% {
+      transform: rotate(360deg); 
+    }
+}
+
+
+@keyframes wave {
+    0%, 100% {
+      transform: scaleY(-1.5);
+    }
+    50% {
+      transform: scaleY(0);
+    }
+}
+
+
+
+
+
+@keyframes scale-armor {
+    0% {
+      transform: scaleY(1); 
+    }
+    15% {
+      transform: scaleY(1); 
+    }
+    25% {
+      transform: scaleY(0.45); 
+    }
+    60% {
+      transform: scaleY(0.45); 
+    }
+    90% {
+      transform: scaleY(0.45); 
+    }
+    100% {
+      transform: scaleY(1); 
+    }
+}
+
+/* @keyframes move-rectangle {
+  0% {
+    left: -120vw; 
+  }
+  20% {
+    left: -120vw; 
+  }
+  70% {
+    left: 0; 
+  }
+  70% {
+     
+  }
+  100% {
+    left: -120vw; 
+  }
+} */
+
+
+@keyframes move-amour {
+    0% {
+      left: -122vw; 
+    }
+    10% {
+      left: -122vw;
+    }
+    15% {
+      left: -122vw;
+    }
+    24% {
+      left: 0; 
+    }
+    60% {
+      left: 0; 
+    }
+    80% {
+      left: 0;
+    }
+    100% {
+      left: -122vw; 
+    }
+}

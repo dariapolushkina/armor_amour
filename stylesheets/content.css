@@ -79,46 +79,14 @@ p{
   animation: rotate-r 15s linear infinite, pulse 10s ease-in-out infinite;
 }
 
-
-@keyframes rotate-r {
-    from {
-      transform: rotate(0deg);
-    }
-  
-    to {
-      transform: rotate(360deg);
-    }
-  }
-
-  .ring-l {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform-origin: center;
-    animation: rotate-l 15s linear infinite, pulse 10s ease-in-out infinite;
-  }
-  
-  
-  @keyframes rotate-l {
-      from {
-        transform: rotate(360deg);
-      }
-    
-      to {
-        transform: rotate(0deg);
-      }
-    }
-
-
-@keyframes pulse {
-    0%,100%{
-        scale: 100%;
-    }
-    50%{
-        scale: 105%;
-    }
+.ring-l {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  animation: rotate-l 15s linear infinite, pulse 10s ease-in-out infinite;
 }
 
 .knight-01{
@@ -142,28 +110,6 @@ p{
   animation-delay: 0.2s;
   background-repeat: no-repeat;
   background-size: contain;
-}
-
-@keyframes knight-01_step {
-  0% {
-    background-image: url("../img/knight_1/ьесь_copy-1.png");
-  }
-  5% {
-    background-image: url("../img/knight_1/ьесь_copy-2.png");
-  }
-  10% {
-    background-image: url("../img/knight_1/ьесь_copy-3.png");
-  }
-  15% {
-    background-image: url("../img/knight_1/ьесь_copy-4.png");
-  }
-  
-  25% {
-    background-image: url("../img/knight_1/ьесь_copy-1.png");
-  }
-  100% {
-    background-image: url("../img/knight_1/ьесь_copy-1.png");
-  }
 }
 
 .text-01 {
@@ -215,15 +161,6 @@ p{
   animation: blink_text 0.1s step-start infinite; 
 }
 
-@keyframes blink_text {
-  0%, 100% {
-    color: #FF70AB; 
-  }
-  50% {
-    color: white; 
-  }
-}
-
 
 .star_and_strokes_block {
   position: absolute;
@@ -245,19 +182,6 @@ p{
   height: 20vw;
   animation: rotate_star 1s infinite ease-in-out ;
   animation-delay: 0.1s;
-}
-
-
-@keyframes rotate_star {
-  0% {
-    transform: rotate(0deg); 
-  }
-  95% {
-    transform: rotate(360deg); 
-  }
-  100% {
-    transform: rotate(360deg); 
-  }
 }
 
 .pink-strokes{
@@ -283,7 +207,6 @@ p{
 }
 
 
-
 .line:nth-child(1) { --i: 0; height: 1vh; }
 .line:nth-child(2) { --i: 1; height: 1.1vh; }
 .line:nth-child(3) { --i: 2; height: 1.2vh; }
@@ -299,28 +222,12 @@ p{
 .line:nth-child(13) { --i: 12; height: 2.2vh; }
 
 
-@keyframes wave {
-  0%, 100% {
-    transform: scaleY(-1.5);
-  }
-  50% {
-    transform: scaleY(0);
-  }
-}
+
 
 .animation-container {
   margin-top: 138vh;
   position: absolute;
   z-index: 9999;
-}
-@font-face {
-  font-family: "BenzGacore-Regular";
-  src: url("path/to/BenzGacore-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "SnellRoundhand-Bold";
-  src: url("path/to/SnellRoundhand-Bold.ttf") format("truetype");
 }
 
 .second-block {
@@ -356,28 +263,6 @@ p{
 } 
 
 
-@keyframes scale-armor {
-  0% {
-    transform: scaleY(1); 
-  }
-  15% {
-    transform: scaleY(1); 
-  }
-  25% {
-    transform: scaleY(0.45); 
-  }
-  60% {
-    transform: scaleY(0.45); 
-  }
-  90% {
-    transform: scaleY(0.45); 
-  }
-  100% {
-    transform: scaleY(1); 
-  }
-}
-
-
 .black-rectangle {
   background-color: rgb(0, 0, 0);
   opacity: 0%;
@@ -390,25 +275,6 @@ p{
   animation: move-rectangle 4s infinite;
 }
 
-/* @keyframes move-rectangle {
-  0% {
-    left: -120vw; 
-  }
-  20% {
-    left: -120vw; 
-  }
-  70% {
-    left: 0; 
-  }
-  70% {
-     
-  }
-  100% {
-    left: -120vw; 
-  }
-} */
-
-
 .amour { 
   scale: 101.5%;
   position: absolute; 
@@ -419,7 +285,6 @@ p{
   animation: move-amour 4s infinite ease-in-out; 
 }
 
-
 .amour_svg path {
   animation: fill-armor 4s infinite cubic-bezier(0.215, 0.610, 0.355, 1);
 }
@@ -429,33 +294,6 @@ p{
   height: auto;
   fill:#ffffff;
 } 
-
-
-@keyframes move-amour {
-  0% {
-    left: -122vw; 
-  }
-  10% {
-    left: -122vw;
-  }
-  15% {
-    left: -122vw;
-  }
-  24% {
-    left: 0; 
-  }
-  60% {
-    left: 0; 
-  }
-  80% {
-    left: 0;
-  }
-  100% {
-    left: -122vw; 
-  }
-}
-
-
 
 /* .bottom_test {
   margin-top: 350vh;
@@ -559,7 +397,7 @@ p{
   width: 66vw;
 }
 
-@keyframes sprite-animation {
+/* @keyframes sprite-animation {
   0% {
     background-image: url("../img/1.svg"); 
   }
@@ -650,7 +488,7 @@ p{
   100% {
     background-image: url("../img/1.svg"); 
   }
-}
+} */
 
 .background_knight {
   top: 23vh;
