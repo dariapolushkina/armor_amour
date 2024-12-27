@@ -1,15 +1,22 @@
 *{ box-sizing: border-box;}
 
-html, body {width:100%; overflow-x:hidden}
+html, body {width:100vw; overflow-x:hidden; min-height: 100%;}
+
 body{
-    width: 100%;
-    height: 500vw;
-    background-color: rgb(0, 0, 0);
-    background-image: url(/img/reffin.png);
-    background-size: contain;
-    cursor: url("") , auto;
-    display: flex;
-    justify-content: center;
+  height: 500vw;
+  max-width: 100%;
+  width: 100vw;
+  display: block;
+  background-color: rgb(0, 0, 0);
+  background-image: url(/img/reffin.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  
+}
+
+section {
+  unicode-bidi: isolate;
 }
 
 
@@ -22,7 +29,7 @@ body{
   display: flex;
   flex-direction: column;
   gap: 3vh;
-}
+} 
 
 @font-face {
 font-family: "DINAlternateBold";
@@ -50,44 +57,65 @@ p{
 }
 
 .first_block {
-  width: 92vw;
-  height: 122vh;
-  background-color: rgb(0, 0, 0);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
+  width: 92vw;
+  height: 68vw;
+  /* background-color: rgb(0, 0, 0); */
   overflow: hidden;
-  margin-bottom: 5vh;
+  margin-bottom: 2vw;
+}
+.ring_01{
+  position: absolute;
+  height: 12vw;
+  top: 28vw;
+  left: 30vw;
+  animation: rotate-r 7s linear infinite;
+  z-index: 2;
 }
 
-.rings {
-  scale: 160%;
-  margin-left: -21vw;
+.ring_02{
   position: absolute;
-  top: 0%;
-  width: 70vw;
-  height: 70vw;
+  height: 26vw;
+  top: 21.5vw;
+  left: 22.5vw;
+  animation: rotate-l 7s linear infinite;
+  z-index: 2;
 }
 
-.ring-r {
+.ring_03{
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform-origin: center;
-  animation: rotate-r 15s linear infinite, pulse 10s ease-in-out infinite;
+  height: 46vw;
+  top: 11.5vw;
+  left: 13vw;
+  animation: rotate-r 7s linear infinite;
+  z-index: 2;
 }
 
-.ring-l {
+.ring_04{
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform-origin: center;
-  animation: rotate-l 15s linear infinite, pulse 10s ease-in-out infinite;
+  height: 67vw;
+  top: 1vw;
+  left: 2.5vw;
+  animation: rotate-l 7s linear infinite;
+  z-index: 2;
+}
+
+.ring_05{
+  position: absolute;
+  height: 90.5vw;
+  top: -10.5vw;
+  left: -9vw;
+  animation: rotate-r 7s linear infinite;
+  z-index: 2;
+}
+
+.ring_06{
+  position: absolute;
+  height: 118vw;
+  top: -24vw;
+  left: -23vw;
+  animation: rotate-l 7s linear infinite;
+  z-index: 2;
 }
 
 .knight-01{
@@ -116,7 +144,7 @@ p{
 .text-01 {
   color: white;
   position: absolute; 
-  top: 8vh; 
+  top: 4vw; 
   width: 100vw;
   height: 2vh;
   padding: 0 4vw; 
@@ -132,7 +160,6 @@ p{
 .text-02 {
   color: white;
   position: relative; 
-  top: -2.5vh;
   width: 100vw;
   height: 2vh;
   padding: 0 4vw; 
@@ -140,26 +167,13 @@ p{
   justify-content: space-between; 
   align-items: center; 
   z-index: 9999;
+  margin-bottom: 2vw;
 }
 .text-02 p:hover {
   animation: blink_text 0.3s step-start infinite; 
 }
 
-.text-03 {
-  color: white;
-  position: relative; 
-  width: 100vw;
-  height: 2vh;
-  padding: 0 4vw; 
-  display: flex;
-  justify-content: space-between; 
-  align-items: center; 
-  z-index: 9999;
-}
 
-.text-03 p:hover {
-  animation: blink_text 0.1s step-start infinite; 
-}
 
 .text-04 {
   color: white;
@@ -174,43 +188,43 @@ p{
   z-index: 9999;
 }
 
-.star_and_strokes_block {
-  position: absolute;
-  margin-right: 4vw;
-  right: 0;
-  height: 100vh;
-  width: 20vw;
-  margin-top: 22vh;
+.star_and_strokes_block{
+  z-index: 3;
+  display: block;
+  width: 20vw; 
+  position: absolute; 
+  top: 12vw;
+  right: 0; 
+  height: 60vw;
 }
 
 .white-star{
   background-color: black;
   border-radius: 50%;
-  position: absolute;
-  display: flex;
-  justify-content: center;
+  position: relative;
   left: 1vw;
   width: 20vw;
   height: 20vw;
   animation: rotate_star 1s infinite ease-in-out ;
   animation-delay: 0.1s;
+  margin-bottom: 4vw;
 }
 
 .pink-strokes{
-  margin-top: 25vh;
+  margin-top: -5vw; 
+  padding-top: 2vw;
   background-color: rgb(0, 0, 0);
   justify-content: end;
   align-items: flex-end;
   display: inline-block;
-  height: 75vh;
   display: flex;
   flex-direction: column; 
-  gap:3vh; 
-}
+  gap:3vw; 
+} 
 
 .line {
   width: 90%; 
-  height: 5vh; 
+  height: 0.8vw; 
   background-color: #FF70AB;
   animation: wave 1s ease-in-out infinite;
   animation-delay: calc(var(--i) * 0.04s); 
@@ -233,22 +247,13 @@ p{
 .line:nth-child(12) { --i: 11; height: 2.1vh; }
 .line:nth-child(13) { --i: 12; height: 2.2vh; }
 
-
 .second-block {
-  z-index: 9999;
-  position: relative;
-  height: 98vh;
-  width: 92vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 5vh;
+  height: 55.5vw;
+  overflow: hidden;
 }
 
 .armor {
   position: absolute;
-  top: 0%;
   z-index: 2;
   width: 92vw;
   transform: scaleY(0.8);
@@ -281,9 +286,9 @@ p{
 }
 
 .amour { 
+  margin-top: 8vw;
   scale: 101.5%;
   position: absolute; 
-  top: 14vh; 
   z-index: 4; 
   width: 92vw; 
   left: -92vw;  
@@ -302,8 +307,7 @@ p{
 
 
 .split {
-  position: relative;
-  top: 23vh;
+  margin-top: 24vw;
   width: 92vw; 
   height: 30vw;
   animation: playFrames 4s steps(41) infinite; 
@@ -313,20 +317,8 @@ p{
 
 @keyframes playFrames {
   0% { background-image: url('/img/1.png'); }
-  2.44% { background-image: url('/img/2.png'); }
-  4.88% { background-image: url('/img/3.png'); }
-  7.32% { background-image: url('/img/4.png'); }
-  9.76% { background-image: url('/img/5.png'); }
-  12.2% { background-image: url('/img/6.png'); }
-  14.63% { background-image: url('/img/7.png'); }
-  17.07% { background-image: url('/img/8.png'); }
-  19.51% { background-image: url('/img/9.png'); }
   21.95% { background-image: url('/img/10.png'); }
   24.39% { background-image: url('/img/11.png'); }
-  26.83% { background-image: url('/img/12.png'); }
-  29.27% { background-image: url('/img/13.png'); }
-  31.71% { background-image: url('/img/14.png'); }
-  34.15% { background-image: url('/img/15.png'); }
   36.59% { background-image: url('/img/16.png'); }
   39.02% { background-image: url('/img/17.png'); }
   41.46% { background-image: url('/img/18.png'); }
@@ -356,48 +348,36 @@ p{
   100% { background-image: url('/img/1.png'); } 
 }
 
-
-.split {
-  /* position: absolute;
-  top: 180vh;
-  width: 92vw; 
-  height: 30vw;
-  background: url('/img/itog.png') no-repeat;
-  background-size: 3772vw 100%; 
-  animation: play 4s steps(41) infinite; */
-
-}
-.third-block {
-  position: absolute;
-  top: 272vh;
-  height: 98vh;
-  left: 0vw;
-  width: 92vw;
+.text-03 {
+  color: white;
+  width: 100vw;
+  padding: 0 4vw; 
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-}
-.stars {
-  z-index: 2;
-  position: relative;
-  width: 120vh;
-  height: 120vh; 
-  top: 10vh;
-  left: 20vw;
+  justify-content: space-between; 
+  align-items: center; 
+  z-index: 9999;
 }
 
+.text-03 p:hover {
+  animation: blink_text 0.1s step-start infinite; 
+}
+
+
+.third-block {
+  height: 120vw;
+  /* background-color: rgb(0, 0, 0); */
+  overflow: hidden;
+}
 .star {
+  top: 130vw;
+  left: 10vw;
   position: absolute;
-  width: 100%;
-  height: 100%;
-  scale: 200%;
+  height: 115vw;
   opacity: 0; 
   transform: scale(0); 
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
-
+/* ???? */
 .star-1 {
   opacity: 1; 
   transform: scale(1); 
@@ -422,29 +402,14 @@ p{
   }
 }
 
-.star-1 {
-  animation: grow 1s infinite;
-}
-
 .star-2 {
-  animation: grow 0.5s infinite; /* Задержка в 0.5 секунды */
+  animation: grow 15s infinite; 
 }
 
 .star-3 {
-  animation: grow 0.5s infinite 0.25s; 
+  animation: grow 15s infinite 7s; 
 }
 
-.star-4 {
-  animation: grow 1s infinite 0.s; 
-}
-
-.star-5 {
-  animation: grow 1s infinite 0.8s; 
-}
-
-.star-6 {
-  animation: grow 1s infinite 1.2s; 
-}
 
 /* @keyframes play {
   0% {
@@ -456,27 +421,28 @@ p{
 } */
 
 
-.bottom_test {
-  position: absolute;
-  left: 28vw;
-}
 
-.bottom_hiding_rect{
+.bottom_rings_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  left: -28vw;
-  width: 100vw;
-  height: 180vh;
-  background-color: rgb(0, 0, 0);
-  z-index: -2;
+  top: 85vh;
+  width: 130vw;
+  height: 150vh;
+  background-color: rgba(207, 207, 207, 0.5);
+  z-index: -3;
+  overflow: hidden;
 }
 
 .bottom_rings {
-  top: -95vh;
-  z-index: -3;
   scale: 240%;
   position: relative;
+  top: -80vh;
+  left: 16vw;
   width: 70vw;
   height: 70vw;
+
 }
 .b-ring-r {
   position: absolute;
@@ -498,39 +464,34 @@ p{
   }
 
 .knight-back{
-  top: -20vh;
+  top: 141vw;
   left: 42vw;
-  z-index: 999;
+  z-index: 98;
   position: absolute;
   width: 50vw;  
   height: auto;
 }
 
-.text-bottom{
-  position: absolute;
-  z-index: 999;
-  left: 1vw;
-}
-
 .feel{
-  top: 30vh;
-  z-index: inherit;
-  position: relative;
-  left: 3vw;
+  position: absolute;
+  top: 171vw;
+  z-index: 999;
+  left: 4vw;
   width: 93vw;
 }
 .kakovo{
-  top: 11vh;
+  z-index: 99;
+  position: absolute;
+  top: 195vw;
   left: 27vw;
-  position: relative;
   width: 67vw;
 }
 
 .eto{
-  top: 8vh;
-  z-index: inherit;
-  left: 5vw;
-  position: relative;
+  z-index: 999;
+  position: absolute;
+  top: 207.5vw;
+  left: 6vw;
   width: 91vw;
 }
 

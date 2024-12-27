@@ -122,28 +122,3 @@
     /* Например, для экранов в альбомной ориентации */
 }
 
-
-@media (max-width: 768px) { /* Для экранов шириной 768px и меньше */
-    .first_block {
-        overflow: visible;
-    }
-    .star_and_strokes_block {
-        scale: 50%;
-        top: 50vh;
-        left: 10vw;
-        rotate: 90deg;
-    }
-    .rings {
-      margin-left: 0vw;
-      height: 100vh; 
-      width: 100vh; 
-    }
-
-    .knight-01 {
-        margin-top: 55vh;
-        margin-left: 0vw;
-        width: 70vw;
-        height: 130vh;
-
-    }
-  }
