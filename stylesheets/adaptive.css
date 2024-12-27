@@ -76,10 +76,10 @@ p{
 
 .ring_05{
   position: absolute;
-  scale: 180%;
+  scale: 175%;
   width: 100%;
   left: 0vw;
-  top: 25vw;
+  top: 33vw;
   animation: rotate-r 7s linear infinite;
   z-index: 2;
 }
