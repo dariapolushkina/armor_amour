@@ -93,58 +93,39 @@
 
 
 
-
 @keyframes scale-armor {
     0% {
-      transform: scaleY(0.45); 
+      transform: scaleY(1); 
     }
     10% {
       transform: scaleY(1); 
     }
-    35% {
+    23% {
       transform: scaleY(1); 
     }
-    47% {
+    31% {
       transform: scaleY(0.45); 
     }
     90% {
       transform: scaleY(0.45); 
     }
+    95% {
+      transform: scaleY(1); 
+    }
     100% {
-      transform: scaleY(0.45); 
+      transform: scaleY(1); 
     }
 }
-
-/* @keyframes move-rectangle {
-  0% {
-    left: -120vw; 
-  }
-  20% {
-    left: -120vw; 
-  }
-  70% {
-    left: 0; 
-  }
-  70% {
-     
-  }
-  100% {
-    left: -120vw; 
-  }
-} */
 
 
 @keyframes move-amour {
     0% {
       left: -122vw; 
     }
-    10% {
+    17% {
       left: -122vw;
     }
-    36% {
-      left: -122vw;
-    }
-    42% {
+    23% {
       left: 4vw; 
     }
     60% {
