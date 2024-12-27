@@ -302,36 +302,36 @@ p{
 }
 
 @keyframes playFrames {
-  0% { background-image: url('/img/1.png'); }
-  21.95% { background-image: url('/img/10.png'); }
-  24.39% { background-image: url('/img/11.png'); }
-  36.59% { background-image: url('/img/16.png'); }
-  39.02% { background-image: url('/img/17.png'); }
-  41.46% { background-image: url('/img/18.png'); }
-  43.9% { background-image: url('/img/19.png'); }
-  46.34% { background-image: url('/img/20.png'); }
-  48.78% { background-image: url('/img/21.png'); }
-  51.22% { background-image: url('/img/22.png'); }
-  53.66% { background-image: url('/img/23.png'); }
-  56.1% { background-image: url('/img/24.png'); }
-  58.54% { background-image: url('/img/25.png'); }
-  60.98% { background-image: url('/img/26.png'); }
-  63.41% { background-image: url('/img/27.png'); }
-  65.85% { background-image: url('/img/28.png'); }
-  68.29% { background-image: url('/img/29.png'); }
-  70.73% { background-image: url('/img/30.png'); }
-  73.17% { background-image: url('/img/31.png'); }
-  75.61% { background-image: url('/img/32.png'); }
-  78.05% { background-image: url('/img/33.png'); }
-  80.49% { background-image: url('/img/34.png'); }
-  82.93% { background-image: url('/img/35.png'); }
-  85.37% { background-image: url('/img/36.png'); }
-  87.8% { background-image: url('/img/37.png'); }
-  90.24% { background-image: url('/img/38.png'); }
-  92.68% { background-image: url('/img/39.png'); }
-  95.12% { background-image: url('/img/40.png'); }
-  97.56% { background-image: url('/img/41.png'); }
-  100% { background-image: url('/img/1.png'); } 
+  0% { background-image: url("../img/1.png"); }
+  21.95% { background-image: url("../img/10.png"); }
+  24.39% { background-image: url("../img/11.png"); }
+  36.59% { background-image: url("../img/16.png"); }
+  39.02% { background-image: url("../img/17.png"); }
+  41.46% { background-image: url("../img/18.png"); }
+  43.9% { background-image: url("../img/19.png"); }
+  46.34% { background-image: url("../img/20.png"); }
+  48.78% { background-image: url("../img/21.png"); }
+  51.22% { background-image: url("../img/22.png"); }
+  53.66% { background-image: url("../img/23.png"); }
+  56.1% { background-image: url("../img/24.png"); }
+  58.54% { background-image: url("../img/25.png"); }
+  60.98% { background-image: url("../img/26.png"); }
+  63.41% { background-image: url("../img/27.png"); }
+  65.85% { background-image: url("../img/28.png"); }
+  68.29% { background-image: url("../img/29.png"); }
+  70.73% { background-image: url("../img/30.png"); }
+  73.17% { background-image: url("../img/31.png"); }
+  75.61% { background-image: url("../img/32.png"); }
+  78.05% { background-image: url("../img/33.png"); }
+  80.49% { background-image: url("../img/34.png"); }
+  82.93% { background-image: url("../img/35.png"); }
+  85.37% { background-image: url("../img/36.png"); }
+  87.8% { background-image: url("../img/37.png"); }
+  90.24% { background-image: url("../img/38.png"); }
+  92.68% { background-image: url("../img/39.png"); }
+  95.12% { background-image: url("../img/40.png"); }
+  97.56% { background-image: url("../img/41.png"); }
+  100% { background-image: url("../img/1.png"); } 
 }
 
 .text-03 {
