@@ -347,7 +347,7 @@ p{
 }
 .star {
   top: -7vw;
-  z-index: 3;
+  z-index: 2;
   left: 7vw;
   position: absolute;
   height: 115vw;
@@ -391,7 +391,7 @@ p{
 .knight-back{
   top: 3vw;
   left: 41vw;
-  z-index: 98;
+  z-index: 3;
   position: absolute;
   width: 52vw;  
   height: auto;
@@ -405,7 +405,7 @@ p{
   width: 93vw;
 }
 .kakovo{
-  z-index: 99;
+  z-index: 4;
   position: absolute;
   top: 57vw;
   left: 27vw;
@@ -413,7 +413,7 @@ p{
 }
 
 .eto{
-  z-index: 999;
+  z-index: 4;
   position: absolute;
   top: 69.5vw;
   left: 6vw;
@@ -431,6 +431,7 @@ p{
     width: 100vw;
     height: 400vw;
     overflow: hidden;
+    z-index: 1;
   }
 
   .b_ring_2 {
@@ -439,7 +440,6 @@ p{
     left: 33vw;
     top: 158vw;
     animation: rotate-r 10s linear infinite;
-    z-index: 2;
   }
 
   .b_ring_3 {
@@ -448,7 +448,6 @@ p{
     left: 33vw;
     top: 158vw;
     animation: rotate-r 10s linear infinite;
-    z-index: 2;
   }
 
   .b_ring_4 {
@@ -457,7 +456,6 @@ p{
     left: 38vw;
     top: -35vw;
     animation: rotate-r 10s linear infinite;
-    z-index: 2;
   }
 
 
@@ -467,7 +465,6 @@ p{
     left: 23vw;
     top: -54vw;
     animation: rotate-r 10s linear infinite;
-    z-index: 2;
   }
 
   .b_ring_6 {
@@ -476,7 +473,6 @@ p{
   left: 8vw;
   top: -72vw;
   animation: rotate-r 10s linear infinite;
-  z-index: 2;
   }
 
  .b_ring_7 {
@@ -485,7 +481,6 @@ p{
   left: -7vw;
   top: -87vw;
   animation: rotate-r 10s linear infinite;
-  z-index: 2;
   }
 
 .b_ring_8 {
@@ -494,7 +489,6 @@ p{
   left: -22vw;
   top: -97vw;
   animation: rotate-r 10s linear infinite;
-  z-index: 2;
 }
 
 

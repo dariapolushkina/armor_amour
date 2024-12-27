@@ -191,7 +191,7 @@
   0% {
     background-image: url("../img/splash_1.png");
   }
-  12% {
+  20% {
     background-image: url("../img/splash_1.png");
   }
   25% {
@@ -203,10 +203,10 @@
   75% {
     background-image: url("../img/splash_4.png");
   }
-  80% {
+  76% {
     background-image: url("../img/empty.png");
   }
-  95% {
+  98% {
     background-image: url("../img/empty.png");
   }
   100% {
