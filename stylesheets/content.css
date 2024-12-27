@@ -149,8 +149,21 @@ p{
   align-items: center; 
   z-index: 9999;
 }
-.text-01 p:hover {
-  animation: blink_text 0.6s step-start infinite; 
+.text-01 p:nth-child(1) {
+  animation-delay: 0.6s;
+}
+.text-01 p:nth-child(2) {
+  animation-delay: 0.95s;
+}
+.text-01 p:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.text-01 p:nth-child(4) {
+  animation-delay: 1.3s;
+}
+
+.text-01 p {
+  animation: blink_text_1 3.9s step-start infinite; 
 }
 
 .text-02 {
@@ -164,9 +177,23 @@ p{
   z-index: 9999;
   margin-bottom: 1.5vw;
 }
-.text-02 p:hover {
-  animation: blink_text 0.3s step-start infinite; 
+.text-02 p:nth-child(1) {
+  animation-delay: 0s;
 }
+.text-02 p:nth-child(2) {
+  animation-delay: 0.45s;
+}
+.text-02 p:nth-child(3) {
+  animation-delay: 0.1s;
+}
+.text-02 p:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.text-02 p {
+  animation: blink_text_2 0.5s step-start infinite; 
+}
+
 
 
 .star_and_strokes_block{
@@ -419,8 +446,24 @@ p{
   z-index: 9999;
 }
 
-.text-03 p:hover {
-  animation: blink_text 0.1s step-start infinite; 
+.text-03 p:nth-child(1) {
+  animation-delay: 0s;
+}
+.text-03 p:nth-child(2) {
+  animation-delay: 0.05s;
+}
+.text-03 p:nth-child(3) {
+  animation-delay: 0.15s;
+}
+.text-03 p:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.text-03 p:nth-child(5) {
+  animation-delay: 0.2s;
+}
+
+.text-03 p {
+  animation: blink_text 0.3s step-start infinite; 
 }
 
 

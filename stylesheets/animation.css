@@ -57,16 +57,48 @@
 
 
 
-@keyframes blink_text {
+/* @keyframes blink_text {
     0%, 100% {
       color: #FF70AB; 
     }
     50% {
       color: white; 
     }
+  } */
+
+  
+  @keyframes blink_text {
+    0%, 100% {
+      color: black;
+    }
+    23%{
+      color: white;
+    }
+    50% {
+      color: #FF70AB;
+    }
   }
 
+  @keyframes blink_text_2 {
+    0%, 100% {
+      color: rgb(255, 255, 255);
+    }
+    23%{
+      color: white;
+    }
+    50% {
+      color: #FF70AB;
+    }
+  }
 
+  @keyframes blink_text_1 {
+    0%, 47%, 53%, 100% {
+      color: rgb(255, 255, 255);
+    }
+    50% {
+      color: #FF70AB;
+    }
+  }
 
 @keyframes rotate_star {
     0% {
@@ -206,3 +238,6 @@
     background-image: url("../img/splash_1.png");
   }
   }
+
+
+  
