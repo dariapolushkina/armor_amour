@@ -512,11 +512,11 @@ p{
 }
 
 .star-2 {
-  animation: grow 1s infinite; 
+  animation: grow 0.6s infinite; 
 }
 
 .star-3 {
-  animation: grow 1s infinite 0.5s; 
+  animation: grow 0.6s infinite 0.3s; 
 }
 
 .knight-back{
@@ -541,6 +541,7 @@ p{
   top: 57vw;
   left: 27vw;
   width: 67vw;
+  animation: kakovo-change 0.5s infinite;
 }
 
 .eto{
@@ -667,5 +668,35 @@ p{
   display: none;
 }
 .white-starr3 {
+  display: none;
+}
+.white-starr4 {
+  display: none;
+}
+.white-starr5 {
+  display: none;
+}
+.white-starr6 {
+  display: none;
+}
+.white-starr7 {
+  display: none;
+}
+.white-starr8 {
+  display: none;
+}
+.white-starr9 {
+  display: none;
+}
+.white-starr10 {
+  display: none;
+}
+.white-starr11 {
+  display: none;
+}
+.white-starr12 {
+  display: none;
+}
+.white-starr13 {
   display: none;
 }

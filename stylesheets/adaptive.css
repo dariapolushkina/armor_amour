@@ -124,52 +124,160 @@ p{
 .white-starr {
     display: table;
     position: absolute;
-    top: 42vw;
-    left: 13vw;
+    top: 22vw;
+    left: 2vw;
     width: 8vw;
-    animation: float 5s infinite ease-in-out;
-    transition: opacity 0.3s ease; 
+    animation: float 5s infinite ease-in-out, slow-color-change 1s infinite;
+    transition: opacity 0.3s ease;
   }
 
   .white-starr2{
     rotate: 20deg;
     display: table;
     position: absolute;
-    top: 12vw;
-    left: 62vw;
+    top: -21vw;
+    left: 63vw;
     width: 8vw;
-    /* animation: float 5s infinite ease-in-out;
-    transition: opacity 0.3s ease;  */
-    animation: float 5s infinite ease-in-out; /* Анимация левитации */
-    transition: transform 0.3s ease, fill 0.3s ease; /* Плавное изменение */
-  }
-
-  .white-starr2:hover {
-    animation-duration: 1s; /* Ускорение анимации левитации */
+    animation: float 5s infinite ease-in-out, slow-color-change 1s infinite;
+    transition: opacity 0.3s ease;
   }
 
   .white-starr3{
     rotate: 60deg;
     display: table;
     position: absolute;
-    top: 62vw;
-    left: 72vw;
+    top: 68vw;
+    left: 82vw;
     width: 8vw;
-    animation: float 5s infinite ease-in-out;
+    animation: float 5s infinite ease-in-out, slow-color-change 1s infinite;
+    transition: opacity 0.3s ease;
+  }
+
+  .white-starr4{
+    rotate: 190deg;
+    display: table;
+    position: absolute;
+    top: 201vw;
+    left: 12vw;
+    width: 6vw;
+    animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
     transition: opacity 0.3s ease; 
   }
 
-  
-  @keyframes float {
+  .white-starr5{
+    rotate: 170deg;
+    display: table;
+    position: absolute;
+    top: 214vw;
+    left: 6vw;
+    width: 6vw;
+    animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
+    transition: opacity 0.3s ease; 
+  }
+
+  .white-starr6{
+    z-index: 9999;
+    rotate: -195deg;
+    display: table;
+    position: absolute;
+    top: 211vw;
+    left: 36vw;
+    width: 8vw;
+    animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
+    transition: opacity 0.3s ease; 
+  }
+
+  .white-starr7{
+    z-index: 9999;
+    rotate: -115deg;
+    display: table;
+    position: absolute;
+    top: 201vw;
+    left: 86vw;
+    width: 6vw;
+    animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
+    transition: opacity 0.3s ease; 
+  }
+
+  .white-starr8{
+    z-index: 9999;
+    rotate: -155deg;
+    display: table;
+    position: absolute;
+    top: 231vw;
+    left: 21vw;
+    width: 8vw;
+    animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
+    transition: opacity 0.3s ease; 
+  }
+
+  .white-starr9{
+    z-index: 9999;
+    rotate: -195deg;
+    display: table;
+    position: absolute;
+    top: 261vw;
+    left: 14vw;
+    width: 8vw;
+    animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
+    transition: opacity 0.3s ease; 
+  }
+
+
+  .white-starr10{
+    z-index: 9999;
+    rotate: -280deg;
+    display: table;
+    position: absolute;
+    top: 291vw;
+    left: 4vw;
+    width: 8vw;
+    animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
+    transition: opacity 0.3s ease; 
+  }
+
+  .white-starr11{
+    z-index: 9999;
+    rotate: 240deg;
+    display: table;
+    position: absolute;
+    top: 231vw;
+    left: 86vw;
+    width: 8vw;
+    animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
+    transition: opacity 0.3s ease; 
+  }
+
+  .white-starr12{
+    z-index: 9999;
+    rotate: 10deg;
+    display: table;
+    position: absolute;
+    top: 349vw;
+    left: 86vw;
+    width: 6vw;
+    animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
+    transition: opacity 0.3s ease; 
+  }
+
+  @keyframes color-change{
     0%, 100% {
-      transform: translateY(-1.5vw);
-      transform: translateX(2.5vw);
+        fill: white;
     }
     50% {
-      transform: translateX(-8.5vw);
-      transform: translatey(-3.5vw);
+        fill: #FF70AB;
     }
   }
+
+  @keyframes slow-color-change{
+    0%, 50%,65%, 100% {
+        fill: white;
+    }
+    60% {
+        fill: #FF70AB;
+    }
+  }
+  
   
 
 

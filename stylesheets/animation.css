@@ -240,4 +240,15 @@
   }
 
 
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(-1.5vw);
+      transform: translateX(2.5vw);
+    }
+    50% {
+      transform: translateX(-8.5vw);
+      transform: translatey(-3.5vw);
+    }
+  }
+
   
