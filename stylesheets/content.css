@@ -500,7 +500,7 @@ p{
   height: 125vw;
   width: 55vw;
   position: absolute;
-  animation: splash 1s infinite;
+  animation: splash 0.25s infinite;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -512,7 +512,7 @@ p{
   height: 110vw;
   width: 91vw;
   position: absolute;
-  animation: splash_r 1s infinite;
+  animation: splash_r 0.25s infinite;
   background-repeat: no-repeat;
   background-size: contain;
 }
