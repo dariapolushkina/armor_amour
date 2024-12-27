@@ -16,7 +16,7 @@
 }
 
 /* Планшеты (от 415px до 768px) */
-@media screen and (min-width: 415px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
 .star_and_strokes_block {
         display: none; /* Полностью скрывает элемент */
