@@ -499,7 +499,29 @@ p{
 
 
 
+.left_splash{
+  z-index: 5;
+  margin-top: 25vw;
+  left: -5vw;
+  height: 125vw;
+  width: 55vw;
+  position: absolute;
+  animation: splash 1s infinite;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 
+.right_splash{
+  z-index: 5;
+  margin-top: 52vw;
+  right: -2vw;
+  height: 110vw;
+  width: 91vw;
+  position: absolute;
+  animation: splash_r 1s infinite;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 .text-04 {
   color: white;
   position:absolute; 

@@ -157,3 +157,59 @@
       left: -122vw; 
     }
 }
+
+
+
+@keyframes splash {
+0% {
+  background-image: url("../img/splash_5.png");
+}
+12% {
+  background-image: url("../img/splash_5.png");
+}
+25% {
+  background-image: url("../img/splash_6.png");
+}
+50% {
+  background-image: url("../img/splash_7.png");
+}
+75% {
+  background-image: url("../img/splash_8.png");
+}
+80% {
+  background-image: url("../img/empty.png");
+}
+95% {
+  background-image: url("../img/empty.png");
+}
+100% {
+  background-image: url("../img/splash_5.png");
+}
+}
+
+@keyframes splash_r {
+  0% {
+    background-image: url("../img/splash_1.png");
+  }
+  12% {
+    background-image: url("../img/splash_1.png");
+  }
+  25% {
+    background-image: url("../img/splash_2.png");
+  }
+  50% {
+    background-image: url("../img/splash_3.png");
+  }
+  75% {
+    background-image: url("../img/splash_4.png");
+  }
+  80% {
+    background-image: url("../img/empty.png");
+  }
+  95% {
+    background-image: url("../img/empty.png");
+  }
+  100% {
+    background-image: url("../img/splash_1.png");
+  }
+  }
