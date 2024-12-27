@@ -17,34 +17,80 @@
 
 /* Планшеты (от 415px до 768px) */
 @media screen and (min-width: 415px) and (max-width: 768px) {
-    .flex_colomn{
-        display: flex;
-        width: 100%;
-        position: relative;
-        overflow-x: hidden;
-        flex-direction: column-reverse;
-    }
 
-    .firstbox, .secondbox , .thirdbox{
-        width: 100%;
-        height: 50vw;
-    }
+.star_and_strokes_block {
+        display: none; /* Полностью скрывает элемент */
+}
+
+.first_block {
+    position: relative;
+    width: 92vw;
+    height: 130vw;
+    /* background-color: rgb(0, 0, 0); */
+    overflow: hidden;
+    margin-bottom: 2vw;
+}
+
+.ring_01{
+  position: absolute;
+  height: 12vw;
+  width: 100%;
+  left: 0vw;
+  top: 58vw;
+  animation: rotate-r 7s linear infinite;
+  z-index: 2;
+}
+
+.ring_02{
+  position: absolute;
+  height: 26vw;
+  width: 100%;
+  left: 0vw;
+  top: 51.5vw;
+  animation: rotate-l 7s linear infinite;
+  z-index: 2;
+}
+
+.ring_03{
+  position: absolute;
+  height: 46vw;
+  width: 100%;
+  left: 0vw;
+  top: 41.5vw;
+  animation: rotate-r 7s linear infinite;
+  z-index: 2;
+}
+
+.ring_04{
+  position: absolute;
+  height: 67vw;
+  width: 100%;
+  left: 0vw;
+  top: 31vw;
+  animation: rotate-l 7s linear infinite;
+  z-index: 2;
+}
+
+.ring_05{
+  position: absolute;
+  height: 90.5vw;
+  width: 100%;
+  left: 0vw;
+  top: 20.5vw;
+  animation: rotate-r 7s linear infinite;
+  z-index: 2;
+}
+
+.ring_06{
+  display: none;
+}
+
+
 }
 
 
 @media screen and (max-width: 414px) {
-    .flex_colomn{
-        display: flex;
-        width: 100%;
-        position: relative;
-        overflow-x: hidden;
-        flex-direction: column;
-    }
 
-    .firstbox, .secondbox , .thirdbox{
-        width: 100%;
-        height: 50vw;
-    }
 }
 
 /* ////////////////////////// Медиазапросы с ориентацией ////////////////////////// */
