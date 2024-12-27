@@ -350,13 +350,13 @@ p{
 
 
 .third-block {
-  height: 120vw;
+  position: relative;
+  height: 300vw;
   /* background-color: rgb(0, 0, 0); */
-  overflow: hidden;
 }
 .star {
+  top: -9vw;
   z-index: 3;
-  top: 130vw;
   left: 9vw;
   position: absolute;
   height: 115vw;
@@ -398,7 +398,7 @@ p{
 }
 
 .knight-back{
-  top: 141vw;
+  top: 4vw;
   left: 42vw;
   z-index: 98;
   position: absolute;
@@ -408,7 +408,7 @@ p{
 
 .feel{
   position: absolute;
-  top: 171vw;
+  top: 33vw;
   z-index: 999;
   left: 4vw;
   width: 93vw;
@@ -416,7 +416,7 @@ p{
 .kakovo{
   z-index: 99;
   position: absolute;
-  top: 195vw;
+  top: 57vw;
   left: 27vw;
   width: 67vw;
 }
@@ -424,14 +424,14 @@ p{
 .eto{
   z-index: 999;
   position: absolute;
-  top: 207.5vw;
+  top: 69.5vw;
   left: 6vw;
   width: 91vw;
 }
 
 
   .bottom_rings{
-    top: 202vw;
+    top: 64vw;
     position: absolute;
     width: 100vw;
     height: 400vw;
