@@ -17,6 +17,21 @@
 
 /* Планшеты (от 415px до 768px) */
 @media screen and (max-width: 768px) {
+p{ 
+        font-size: 2.5vw; 
+}
+ .text-01 {
+        color: white;
+        position: absolute; 
+        top: 6vw; 
+        width: 100vw;
+        height: 2vh;
+        padding: 0 4vw; 
+        display: flex;
+        justify-content: space-between; 
+        align-items: center; 
+        z-index: 9999;
+}
 
 .star_and_strokes_block {
         display: none; /* Полностью скрывает элемент */
@@ -25,58 +40,46 @@
 .first_block {
     position: relative;
     width: 92vw;
-    height: 130vw;
+    height: 150vw;
     /* background-color: rgb(0, 0, 0); */
-    overflow: hidden;
+    overflow: visible;
     margin-bottom: 2vw;
 }
 
 .ring_01{
-  position: absolute;
-  height: 12vw;
-  width: 100%;
-  left: 0vw;
-  top: 58vw;
-  animation: rotate-r 7s linear infinite;
-  z-index: 2;
+  display: none;
 }
 
 .ring_02{
   position: absolute;
-  height: 26vw;
+  height: 46vw;
   width: 100%;
   left: 0vw;
-  top: 51.5vw;
-  animation: rotate-l 7s linear infinite;
-  z-index: 2;
+  top: 56.5vw;
 }
 
 .ring_03{
   position: absolute;
-  height: 46vw;
+  height: 80vw;
   width: 100%;
   left: 0vw;
-  top: 41.5vw;
-  animation: rotate-r 7s linear infinite;
-  z-index: 2;
+  top: 40vw;
 }
 
 .ring_04{
+    scale: 174%;
   position: absolute;
-  height: 67vw;
   width: 100%;
   left: 0vw;
-  top: 31vw;
-  animation: rotate-l 7s linear infinite;
-  z-index: 2;
+  top: 46vw;
 }
 
 .ring_05{
   position: absolute;
-  height: 90.5vw;
+  scale: 180%;
   width: 100%;
   left: 0vw;
-  top: 20.5vw;
+  top: 25vw;
   animation: rotate-r 7s linear infinite;
   z-index: 2;
 }
