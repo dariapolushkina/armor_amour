@@ -288,7 +288,6 @@ p{
   width: 92vw; 
   height: 30vw;
   animation: playFrames 4s steps(41) infinite; 
-  background-image: url(../img/19.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
