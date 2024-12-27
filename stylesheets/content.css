@@ -8,20 +8,13 @@ body{
   width: 100vw;
   display: block;
   background-color: rgb(0, 0, 0);
-  /* background-image: url(/img/reffin.png); */
-  background-attachment: scroll;
-  background-position: center;
+  /* background-image: url("../img/reffin.png"); */
   background-size: 100%;
   background-repeat: no-repeat;
   overflow-x: hidden;
   
 }
 
-.mob{
-  position: absolute;
-  width: 100vw;
-  height: auto;
-}
 
 section {
   unicode-bidi: isolate;
@@ -73,6 +66,7 @@ p{
   margin-bottom: 2vw;
 }
 .ring_01{
+  display: none;
   position: absolute;
   height: 12vw;
   top: 28vw;
@@ -127,22 +121,16 @@ p{
 }
 
 .knight-01{
-  margin-top: 55vh;
-  margin-left: -22vw;
-  width: 40vw;
-  height: 130vh;
+  z-index: 5;
+  margin-top: 13vw;
+  left: 15vw;
+  height: 58vw;
+  width: 70vw;
   position: absolute;
-  display: flex; 
-  justify-content: center;
-  align-items: center; 
-  
 }
 .knight-01-steps{
-  
   height: 100%;
   width: 100%;
-  position: relative;
-  display: block;
   animation: knight-01_step 1s infinite;
   animation-delay: 0.2s;
   background-repeat: no-repeat;
@@ -169,7 +157,6 @@ p{
   color: white;
   position: relative; 
   width: 100vw;
-  height: 2vh;
   padding: 0 4vw; 
   display: flex;
   justify-content: space-between; 
@@ -256,10 +243,6 @@ p{
 }
 
 
-.armor_svg path {
-  animation: fill-armor 4s infinite cubic-bezier(0.215, 0.610, 0.355, 1);
-}
-
 .armor_svg {
   width: 100%;
   height: auto;
@@ -305,11 +288,12 @@ p{
   width: 92vw; 
   height: 30vw;
   animation: playFrames 4s steps(41) infinite; 
+  background-image: url(../img/19.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-@keyframes playFrames {
+/* @keyframes playFrames {
   0% { background-image: url("../img/1.png"); }
   21.95% { background-image: url("../img/10.png"); }
   24.39% { background-image: url("../img/11.png"); }
@@ -340,7 +324,7 @@ p{
   95.12% { background-image: url("../img/40.png"); }
   97.56% { background-image: url("../img/41.png"); }
   100% { background-image: url("../img/1.png"); } 
-}
+} */
 
 .text-03 {
   color: white;
@@ -363,9 +347,9 @@ p{
   /* background-color: rgb(0, 0, 0); */
 }
 .star {
-  top: -9vw;
+  top: -7vw;
   z-index: 3;
-  left: 9vw;
+  left: 7vw;
   position: absolute;
   height: 115vw;
   opacity: 0; 
@@ -398,19 +382,19 @@ p{
 }
 
 .star-2 {
-  animation: grow 15s infinite; 
+  animation: grow 0.5s infinite; 
 }
 
 .star-3 {
-  animation: grow 15s infinite 7s; 
+  animation: grow 0.5s infinite 0.25s; 
 }
 
 .knight-back{
-  top: 4vw;
-  left: 42vw;
+  top: 3vw;
+  left: 41vw;
   z-index: 98;
   position: absolute;
-  width: 50vw;  
+  width: 52vw;  
   height: auto;
 }
 
@@ -435,6 +419,10 @@ p{
   top: 69.5vw;
   left: 6vw;
   width: 91vw;
+}
+
+.eto-mob {
+  display: none;
 }
 
 

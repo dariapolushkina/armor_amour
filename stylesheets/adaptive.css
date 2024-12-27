@@ -18,26 +18,16 @@
 /* Планшеты (от 415px до 768px) */
 @media screen and (max-width: 768px) {
 p{ 
-        font-size: 2.5vw; 
-}
- .text-01 {
-        color: white;
-        position: absolute; 
-        top: 6vw; 
-        width: 100vw;
-        height: 2vh;
-        padding: 0 4vw; 
-        display: flex;
-        justify-content: space-between; 
-        align-items: center; 
-        z-index: 9999;
+        font-size: 2.6vw; 
 }
 
 .star_and_strokes_block {
         display: none; /* Полностью скрывает элемент */
 }
-
 .first_block {
+    scale: 172%;
+    top: 72vw;
+    left: 18vw;
     position: relative;
     width: 92vw;
     height: 150vw;
@@ -49,7 +39,7 @@ p{
 .ring_01{
   display: none;
 }
-
+/* 
 .ring_02{
   position: absolute;
   height: 46vw;
@@ -82,11 +72,80 @@ p{
   top: 34vw;
   animation: rotate-r 7s linear infinite;
   z-index: 2;
-}
+} */
 
 .ring_06{
   display: none;
 }
+
+.text-02{
+    top: 3vw;
+    margin-bottom: 3vw;
+}
+
+.split{
+    margin-top: 26vw;
+}
+
+
+.star{
+  top: -3vw;
+  left: -23vw;
+  height: 162vw;
+}
+
+.knight-back{
+    top: 12vw;
+    left: 25vw;
+    width: 70vw;;
+}
+
+.feel{
+    top: 67vw;
+}
+
+.kakovo{
+    top: 90vw;
+}
+
+.eto {
+    display: none;
+}
+
+.eto-mob{
+    display: table;
+    z-index: 999;
+    position: absolute;
+    top: 109vw;
+    left: 11vw;
+    width: 56vw;
+
+}
+
+.bottom_rings{
+    rotate: 5deg;
+    scale: 142%;
+    top: 178vw;
+    left: -38vw;
+    position: absolute;
+    width: 100vw;
+    height: 400vw;
+    overflow: hidden;
+}
+
+
+.text-04{
+    top: 436vw;
+}
+
+
+
+
+
+
+
+
+
 
 
 }

@@ -29,26 +29,32 @@
 }
 
 @keyframes knight-01_step {
-    0% {
-      background-image: url("../img/knight_1/ьесь_copy-1.png");
-    }
-    5% {
-      background-image: url("../img/knight_1/ьесь_copy-2.png");
-    }
-    10% {
-      background-image: url("../img/knight_1/ьесь_copy-3.png");
-    }
-    15% {
-      background-image: url("../img/knight_1/ьесь_copy-4.png");
-    }
-    
-    25% {
-      background-image: url("../img/knight_1/ьесь_copy-1.png");
-    }
-    100% {
-      background-image: url("../img/knight_1/ьесь_copy-1.png");
-    }
+  0% {
+  background-image: url("../img/knight-02.png");
 }
+10% {
+  background-image: url("../img/knight-03.png");
+}
+15% {
+  background-image: url("../img/knight-04.png");
+}
+30% {
+  background-image: url("../img/knight-05.png");
+}
+33% {
+  background-image: url("../img/knight-06.png");
+}
+36% {
+  background-image: url("../img/knight-07.png");
+}
+45% {
+  background-image: url("../img/knight-02.png");
+}
+100% {
+  background-image: url("../img/knight-02.png");
+}
+}
+
 
 
 @keyframes blink_text {
