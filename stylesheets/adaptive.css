@@ -78,6 +78,13 @@ p{
   display: none;
 }
 
+.knight-01{
+    position: absolute;
+    top: -6.5vw;
+    left: 7.5vw;
+    height: 79.5vw;
+}
+
 .text-02{
     top: 3vw;
     margin-bottom: 3vw;
