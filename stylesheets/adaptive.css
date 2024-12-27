@@ -155,7 +155,13 @@ p{
     margin-top: 80vw;
   }
 
-
+  .mob_star{
+    display: table;
+    position: absolute;
+    top: 30vw;
+    left: 0vw;
+    width: 102vw;
+  }
 
 
 

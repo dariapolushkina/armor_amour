@@ -255,6 +255,10 @@ p{
 .line:nth-child(12) { --i: 11; height: 2.1vh; }
 .line:nth-child(13) { --i: 12; height: 2.2vh; }
 
+.mob_star{
+  display: none;
+}
+
 .second-block {
   height: 55.5vw;
   overflow: hidden;
