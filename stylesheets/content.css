@@ -1,23 +1,15 @@
 *{ box-sizing: border-box;}
 
-html, body {width:100vw; overflow-x:hidden; min-height: 100%;}
+html, body {width:100vw; overflow-x:hidden; height: 100%;}
 
 body{
-  height: 1500vw;
+  position: relative;
+  height: 100svh;
   max-width: 100%;
   width: 100vw;
   display: block;
   background-color: rgb(0, 0, 0);
-  /* background-image: url(/img/mobilka.png); */
-  /* background-image: url("../img/reffin.png"); */
-  background-size: 100%;
-  background-repeat: no-repeat;
   overflow-x: hidden;
-}
-
-
-section {
-  unicode-bidi: isolate;
 }
 
 
@@ -280,19 +272,6 @@ p{
   fill:#ffffff;
 } 
 
-
-.black-rectangle {
-  background-color: rgb(0, 0, 0);
-  opacity: 0%;
-  left: -92vw;
-  width: 100vw;
-  height: 28vh;
-  position: absolute;
-  top: 17vh;
-  z-index: 3; 
-  animation: move-rectangle 4s infinite;
-}
-
 .amour { 
   margin-top: 8vw;
   scale: 101.5%;
@@ -473,8 +452,6 @@ p{
 
 .third-block {
   position: relative;
-  height: 300vw;
-  /* background-color: rgb(0, 0, 0); */
 }
 .star {
   top: -7vw;
@@ -561,7 +538,7 @@ p{
     top: 64vw;
     position: absolute;
     width: 100vw;
-    height: 400vw;
+    height: 75vw;
     overflow: hidden;
     z-index: 1;
   }
@@ -627,7 +604,7 @@ p{
 
 .left_splash{
   z-index: 5;
-  margin-top: 25vw;
+  margin-top: 20vw;
   left: -5vw;
   height: 125vw;
   width: 55vw;
@@ -639,10 +616,10 @@ p{
 
 .right_splash{
   z-index: 5;
-  margin-top: 52vw;
-  right: -2vw;
-  height: 110vw;
-  width: 91vw;
+  top: 50vw;
+  left: 18vw;
+  height: 80vw;
+  width: 121vw;
   position: absolute;
   animation: splash_r 0.25s infinite;
   background-repeat: no-repeat;
@@ -650,8 +627,8 @@ p{
 }
 .text-04 {
   color: white;
-  position:absolute; 
-  top: 280vw; 
+  position: absolute; 
+  top: 278vw; 
   width: 100vw;
   padding: 0 4vw; 
   display: flex;
@@ -670,33 +647,133 @@ p{
 .white-starr3 {
   display: none;
 }
-.white-starr4 {
-  display: none;
-}
-.white-starr5 {
-  display: none;
-}
-.white-starr6 {
-  display: none;
-}
-.white-starr7 {
-  display: none;
-}
-.white-starr8 {
-  display: none;
-}
-.white-starr9 {
-  display: none;
-}
-.white-starr10 {
-  display: none;
-}
-.white-starr11 {
-  display: none;
-}
-.white-starr12 {
-  display: none;
-}
-.white-starr13 {
-  display: none;
-}
+  .white-starr4{
+    rotate: 190deg;
+    display: table;
+    position: absolute;
+    top: 135vw;
+    left: 12vw;
+    width: 5vw;
+    animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
+    transition: opacity 0.3s ease; 
+  }
+
+  .white-starr5{
+    rotate: 170deg;
+    display: table;
+    position: absolute;
+    top: 124vw;
+    left: 36vw;
+    width: 6vw;
+    animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
+    transition: opacity 0.3s ease; 
+  }
+
+  .white-starr6{
+    z-index: 9999;
+    rotate: -195deg;
+    display: table;
+    position: absolute;
+    top: 141vw;
+    left: 36vw;
+    width: 8vw;
+    animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
+    transition: opacity 0.3s ease; 
+  }
+
+  .white-starr7{
+    z-index: 9999;
+    rotate: -115deg;
+    display: table;
+    position: absolute;
+    top: 130vw;
+    left: 90vw;
+    width: 6vw;
+    animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
+    transition: opacity 0.3s ease; 
+  }
+
+  .white-starr8{
+    z-index: 9999;
+    rotate: -15deg;
+    display: table;
+    position: absolute;
+    top: 151vw;
+    left: 18vw;
+    width: 8vw;
+    animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
+    transition: opacity 0.3s ease; 
+  }
+
+  .white-starr9{
+    z-index: 9999;
+    rotate: -105deg;
+    display: table;
+    position: absolute;
+    top: 205vw;
+    left: 14vw;
+    width: 8vw;
+    animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
+    transition: opacity 0.3s ease; 
+  }
+
+
+  .white-starr10{
+    z-index: 9999;
+    rotate: -345deg;
+    display: table;
+    position: absolute;
+    top: 227vw;
+    left: 74vw;
+    width: 8vw;
+    animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
+    transition: opacity 0.3s ease; 
+  }
+
+  .white-starr11{
+    z-index: 9999;
+    rotate: 205deg;
+    display: table;
+    position: absolute;
+    top: 197vw;
+    left: 76vw;
+    width: 8vw;
+    animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
+    transition: opacity 0.3s ease; 
+  }
+
+  .white-starr12{
+    z-index: 9999;
+    rotate: 10deg;
+    display: table;
+    position: absolute;
+    top: 237vw;
+    left: 86vw;
+    width: 6vw;
+    animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
+    transition: opacity 0.3s ease; 
+  }
+
+  .white-starr13{
+    z-index: 9999;
+    rotate: 50deg;
+    display: table;
+    position: absolute;
+    top: 250vw;
+    left: 26vw;
+    width: 5vw;
+    animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
+    transition: opacity 0.3s ease; 
+  }
+
+  .white-starr14{
+    z-index: 9999;
+    rotate: 52deg;
+    display: table;
+    position: absolute;
+    top: 230vw;
+    left: 17vw;
+    width: 6vw;
+    animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
+    transition: opacity 0.3s ease; 
+  }

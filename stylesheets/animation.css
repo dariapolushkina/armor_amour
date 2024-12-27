@@ -251,4 +251,12 @@
     }
   }
 
+  @keyframes color-change{
+    0%, 100% {
+        fill: white;
+    }
+    50% {
+        fill: #FF70AB;
+    }
+  }
   
