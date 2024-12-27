@@ -27,7 +27,7 @@ p{
 .first_block {
     scale: 172%;
     top: 72vw;
-    left: 18vw;
+    left: 17vw;
     position: relative;
     width: 92vw;
     height: 150vw;
@@ -39,40 +39,6 @@ p{
 .ring_01{
   display: none;
 }
-/* 
-.ring_02{
-  position: absolute;
-  height: 46vw;
-  width: 100%;
-  left: 0vw;
-  top: 56.5vw;
-}
-
-.ring_03{
-  position: absolute;
-  height: 80vw;
-  width: 100%;
-  left: 0vw;
-  top: 40vw;
-}
-
-.ring_04{
-    scale: 174%;
-  position: absolute;
-  width: 100%;
-  left: 0vw;
-  top: 46vw;
-}
-
-.ring_05{
-  position: absolute;
-  scale: 175%;
-  width: 100%;
-  left: 0vw;
-  top: 34vw;
-  animation: rotate-r 7s linear infinite;
-  z-index: 2;
-} */
 
 .ring_06{
   display: none;
@@ -158,9 +124,10 @@ p{
   .mob_star{
     display: table;
     position: absolute;
-    top: 30vw;
-    left: 0vw;
-    width: 102vw;
+    top: 45vw;
+    left: 18vw;
+    width: 63vw;
+    animation: rotate_star 1s infinite;
   }
 
 
