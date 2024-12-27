@@ -381,11 +381,11 @@ p{
 }
 
 .star-2 {
-  animation: grow 0.5s infinite; 
+  animation: grow 1s infinite; 
 }
 
 .star-3 {
-  animation: grow 0.5s infinite 0.25s; 
+  animation: grow 1s infinite 0.5s; 
 }
 
 .knight-back{
