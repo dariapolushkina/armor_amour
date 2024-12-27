@@ -658,3 +658,14 @@ p{
   align-items: center; 
   z-index: 9999;
 }
+
+
+.white-starr {
+  display: none;
+}
+.white-starr2 {
+  display: none;
+}
+.white-starr3 {
+  display: none;
+}

@@ -121,15 +121,56 @@ p{
     margin-top: 80vw;
   }
 
-  .mob_star{
+.white-starr {
     display: table;
     position: absolute;
-    top: 45vw;
-    left: 18vw;
-    width: 63vw;
-    animation: rotate_star 1s infinite;
+    top: 42vw;
+    left: 13vw;
+    width: 8vw;
+    animation: float 5s infinite ease-in-out;
+    transition: opacity 0.3s ease; 
   }
 
+  .white-starr2{
+    rotate: 20deg;
+    display: table;
+    position: absolute;
+    top: 12vw;
+    left: 62vw;
+    width: 8vw;
+    /* animation: float 5s infinite ease-in-out;
+    transition: opacity 0.3s ease;  */
+    animation: float 5s infinite ease-in-out; /* Анимация левитации */
+    transition: transform 0.3s ease, fill 0.3s ease; /* Плавное изменение */
+  }
+
+  .white-starr2:hover {
+    animation-duration: 1s; /* Ускорение анимации левитации */
+  }
+
+  .white-starr3{
+    rotate: 60deg;
+    display: table;
+    position: absolute;
+    top: 62vw;
+    left: 72vw;
+    width: 8vw;
+    animation: float 5s infinite ease-in-out;
+    transition: opacity 0.3s ease; 
+  }
+
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(-1.5vw);
+      transform: translateX(2.5vw);
+    }
+    50% {
+      transform: translateX(-8.5vw);
+      transform: translatey(-3.5vw);
+    }
+  }
+  
 
 
 
