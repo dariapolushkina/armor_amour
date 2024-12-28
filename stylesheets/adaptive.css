@@ -157,133 +157,62 @@ p{
 
   .white-starr4{
     rotate: 190deg;
-    display: table;
-    position: absolute;
-    top: 201vw;
+    top: 225vw;
     left: 12vw;
-    width: 5vw;
-    animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
-    transition: opacity 0.3s ease; 
   }
 
   .white-starr5{
-    rotate: 170deg;
-    display: table;
-    position: absolute;
-    top: 214vw;
-    left: 6vw;
-    width: 6vw;
-    animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
-    transition: opacity 0.3s ease; 
+    rotate: 230deg;
+    top: 224vw;
   }
 
   .white-starr6{
-    z-index: 9999;
-    rotate: -195deg;
-    display: table;
-    position: absolute;
-    top: 211vw;
-    left: 36vw;
-    width: 8vw;
-    animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
-    transition: opacity 0.3s ease; 
+    rotate: -165deg;
+    top: 241vw;
   }
 
   .white-starr7{
-    z-index: 9999;
     rotate: -115deg;
-    display: table;
-    position: absolute;
     top: 201vw;
-    left: 86vw;
-    width: 6vw;
-    animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
-    transition: opacity 0.3s ease; 
   }
 
   .white-starr8{
-    z-index: 9999;
-    rotate: -155deg;
-    display: table;
-    position: absolute;
-    top: 231vw;
-    left: 21vw;
-    width: 8vw;
-    animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
-    transition: opacity 0.3s ease; 
+    rotate: -295deg;
+    top: 261vw;
+    left: 84vw;
   }
 
   .white-starr9{
-    z-index: 9999;
     rotate: -195deg;
-    display: table;
-    position: absolute;
     top: 261vw;
-    left: 14vw;
-    width: 8vw;
-    animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
-    transition: opacity 0.3s ease; 
   }
 
 
   .white-starr10{
-    z-index: 9999;
     rotate: -280deg;
-    display: table;
-    position: absolute;
     top: 291vw;
     left: 4vw;
-    width: 8vw;
-    animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
-    transition: opacity 0.3s ease; 
   }
 
   .white-starr11{
-    z-index: 9999;
     rotate: 240deg;
-    display: table;
-    position: absolute;
-    top: 231vw;
-    left: 86vw;
-    width: 8vw;
-    animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
-    transition: opacity 0.3s ease; 
+    top: 235vw;
+    left: 85vw;
   }
 
   .white-starr12{
-    z-index: 9999;
     rotate: 10deg;
-    display: table;
-    position: absolute;
-    top: 349vw;
-    left: 86vw;
-    width: 6vw;
-    animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
-    transition: opacity 0.3s ease; 
+    top: 359vw;
   }
 
   .white-starr13{
-    z-index: 9999;
     rotate: 50deg;
-    display: table;
-    position: absolute;
-    top: 370vw;
-    left: 26vw;
-    width: 5vw;
-    animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
-    transition: opacity 0.3s ease; 
+    top: 380vw;
   }
 
   .white-starr14{
-    z-index: 9999;
     rotate: 52deg;
-    display: table;
-    position: absolute;
     top: 350vw;
-    left: 21vw;
-    width: 6vw;
-    animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
-    transition: opacity 0.3s ease; 
   }
 
  
@@ -335,8 +264,12 @@ p{
     /* Горизонтальная ориентация для экранов от 769px до 1440px */
 }
 
-@media screen and (min-width: 769px) and (max-width: 1440px) and (orientation: portrait) {
-    /* Вертикальная ориентация для экранов от 769px до 1440px */
+@media screen and (min-width: 769px) and (max-width: 1023px) and (orientation: portrait) {
+    
+
+
+
+    
 }
 
 /* Планшеты */

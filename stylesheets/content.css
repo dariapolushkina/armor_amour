@@ -669,7 +669,7 @@ p{
     rotate: 190deg;
     display: table;
     position: absolute;
-    top: 135vw;
+    top: 145vw;
     left: 12vw;
     width: 5vw;
     animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
@@ -680,7 +680,7 @@ p{
     rotate: 170deg;
     display: table;
     position: absolute;
-    top: 124vw;
+    top: 134vw;
     left: 36vw;
     width: 6vw;
     animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
@@ -692,7 +692,7 @@ p{
     rotate: -195deg;
     display: table;
     position: absolute;
-    top: 141vw;
+    top: 151vw;
     left: 36vw;
     width: 8vw;
     animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
@@ -704,7 +704,7 @@ p{
     rotate: -115deg;
     display: table;
     position: absolute;
-    top: 130vw;
+    top: 140vw;
     left: 90vw;
     width: 6vw;
     animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
@@ -716,7 +716,7 @@ p{
     rotate: -15deg;
     display: table;
     position: absolute;
-    top: 151vw;
+    top: 161vw;
     left: 18vw;
     width: 8vw;
     animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
@@ -728,7 +728,7 @@ p{
     rotate: -105deg;
     display: table;
     position: absolute;
-    top: 205vw;
+    top: 215vw;
     left: 14vw;
     width: 8vw;
     animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
@@ -741,7 +741,7 @@ p{
     rotate: -345deg;
     display: table;
     position: absolute;
-    top: 227vw;
+    top: 237vw;
     left: 74vw;
     width: 8vw;
     animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
@@ -753,7 +753,7 @@ p{
     rotate: 205deg;
     display: table;
     position: absolute;
-    top: 197vw;
+    top: 217vw;
     left: 76vw;
     width: 8vw;
     animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
@@ -765,7 +765,7 @@ p{
     rotate: 10deg;
     display: table;
     position: absolute;
-    top: 237vw;
+    top: 247vw;
     left: 86vw;
     width: 6vw;
     animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
@@ -777,7 +777,7 @@ p{
     rotate: 50deg;
     display: table;
     position: absolute;
-    top: 250vw;
+    top: 260vw;
     left: 26vw;
     width: 5vw;
     animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
@@ -789,7 +789,7 @@ p{
     rotate: 52deg;
     display: table;
     position: absolute;
-    top: 230vw;
+    top: 240vw;
     left: 17vw;
     width: 6vw;
     animation: float 0.3s infinite ease-in-out, color-change 0.3s infinite;
