@@ -1,4 +1,4 @@
-/* КОЛЬЦА */
+
 @keyframes rotate-r {
     from {
       transform: rotate(0deg);
@@ -54,17 +54,6 @@
   background-image: url("../img/knight-02.png");
 }
 }
-
-
-
-/* @keyframes blink_text {
-    0%, 100% {
-      color: #FF70AB; 
-    }
-    50% {
-      color: white; 
-    }
-  } */
 
   
   @keyframes blink_text {
